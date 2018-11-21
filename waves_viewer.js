@@ -20,7 +20,7 @@ function loadJSON(){
 
 function search(query){
     return waves.filter(function(x){
-        return x.name.toLowerCase().includes(query);
+        return x.name.toLowerCase().includes(query.toLowerCase());
     });//.slice(0, 10);
 }
 
