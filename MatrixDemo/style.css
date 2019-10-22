@@ -20,3 +20,12 @@ body{
 .vector-list li input{
   width: 50px;
 }
+
+.matrix {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.matrix input{
+  width: 50px;
+}

@@ -8,9 +8,6 @@ let originPosition = [100, 100];
 let scaleFactor = [20, 20];
 let pointThickness = 2;
 
-// let testMatrix = [[0, 1],
-                  // [-1, 0]];
-let testMatrix = [[0, 1], [-1, 0]]
 
 window.addEventListener('load', () => loadCanvas(), false);
 
@@ -24,11 +21,6 @@ function loadCanvas(){
 }
 
 function update(){
-  y += ySpeed;
-  if (y>canvas.width-1){
-    y=-100;
-  }
-
   draw();
 }
 
@@ -63,7 +55,7 @@ function draw(){
   let transformedVectors = [];
 
   for (let vec of vectors){
-    transformedVectors.push(vecMatrixMult(vec, testMatrix));
+    transformedVectors.push(vecMatrixMult(vec, multMatrix));
   }
 
   ctx.strokeStyle = 'blue';

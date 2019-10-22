@@ -1,4 +1,32 @@
 let vectors;
+let multMatrix = [[1, 0], [0, 1]];
+
+function getRotationMatrix(degAngle){
+  let angle = degAngle * Math.PI/180;
+
+  let cos = Math.cos(angle);
+  let sin = Math.sin(angle);
+
+  if (Math.abs(cos) < 0.00001) cos = 0;
+  if (Math.abs(sin) < 0.00001) sin = 0;
+
+  return [
+    [cos, -sin],
+    [sin, cos]
+  ]
+}
+
+let defaultMatrices = {
+  'identity': [
+    [1, 0], [0, 1]
+  ],
+  '90deg': getRotationMatrix(90),
+  '45deg': getRotationMatrix(45),
+  '20deg': getRotationMatrix(20),
+  '2x': [
+    [2, 0], [0, 2]
+  ]
+}
 
 let defaultShapes = {
   "square": [
@@ -18,7 +46,10 @@ let defaultShapes = {
   ]
 };
 
-window.addEventListener('load', () => defaultShape('square'), false);
+window.addEventListener('load', () => {
+  defaultShape('square');
+  defaultMatrix('identity');
+}, false);
 // window.onload += function(){
 //   defaultShape('square');
 // }
@@ -56,6 +87,47 @@ function showVectors(){
     listElement.appendChild(yInput);
 
     list.appendChild(listElement);
+  }
+}
+
+function defaultMatrix(name){
+  if (defaultMatrices.hasOwnProperty(name)){
+    setMatrix(defaultMatrices[name]);
+  }
+}
+
+function setMatrix(matrix){
+  multMatrix = matrix.slice(0);
+
+  let ch = document.getElementById('matrix').children;
+
+  ch[0].value = multMatrix[0][0];
+  ch[1].value = multMatrix[0][1];
+  ch[3].value = multMatrix[1][0];
+  ch[4].value = multMatrix[1][1];
+}
+
+function fetchMatrix(){
+  let ch = document.getElementById('matrix').children;
+
+  multMatrix[0][0] = ch[0].value;
+  multMatrix[0][1] = ch[1].value;
+  multMatrix[1][0] = ch[3].value;
+  multMatrix[1][1] = ch[4].value;
+}
+
+let rotInterval;
+let currentAngle = 0;
+
+function playRotation(){
+  rotInterval = window.setInterval(intervalStep, 1000 / 60);
+}
+
+function intervalStep(){
+  currentAngle++;
+  setMatrix(getRotationMatrix(currentAngle));
+  if (currentAngle >= 360){
+    window.clearInterval(rotInterval);
   }
 }
 
