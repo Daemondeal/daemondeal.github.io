@@ -118,17 +118,31 @@ function fetchMatrix(){
 
 let rotInterval;
 let currentAngle = 0;
+let currentScale = 1;
 
 function playRotation(){
-  rotInterval = window.setInterval(intervalStep, 1000 / 60);
+  rotInterval = window.setInterval(rotationIntervalStep, 1000 / 60);
 }
 
-function intervalStep(){
+function rotationIntervalStep(){
   currentAngle++;
   setMatrix(getRotationMatrix(currentAngle));
   if (currentAngle >= 360){
     window.clearInterval(rotInterval);
     currentAngle = 0;
+  }
+}
+
+function playScale(){
+  rotInterval = window.setInterval(scalingIntervalStep, 1000 / 60);
+}
+
+function scalingIntervalStep(){
+  currentScale += .01;
+  setMatrix([[currentScale, 0], [0, currentScale]]);
+  if (currentScale >= 2){
+    window.clearInterval(rotInterval);
+    currentScale = 1;
   }
 }
 
