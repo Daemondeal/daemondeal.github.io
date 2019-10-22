@@ -128,6 +128,7 @@ function intervalStep(){
   setMatrix(getRotationMatrix(currentAngle));
   if (currentAngle >= 360){
     window.clearInterval(rotInterval);
+    currentAngle = 0;
   }
 }
 
