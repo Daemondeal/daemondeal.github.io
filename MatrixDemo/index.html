@@ -1,0 +1,38 @@
+<!-- <meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0"/> <!--320--> -->
+
+
+<html>
+<head>
+<title>Matrix Multiplication demo</title>
+<link rel='stylesheet' type='text/css' href='style.css'/>
+<script src='showMatrix.js'></script>
+<script src='setVectors.js'></script>
+</head>
+
+<body>
+
+<div class="canvas-holder">
+  <canvas id='main-canvas' width='400px' height='700px'></canvas>
+</div>
+
+<div class='shape-setter'>
+
+  <div class='default-shapes'>
+    <input type="button" value="Aggiungi Punto" onclick='addVector()'>
+    <input type="button" value="Punto" onclick='defaultShape("origin")'>
+    <input type="button" value="Triangolo" onclick='defaultShape("triangle")'>
+    <input type="button" value="Quadrato" onclick='defaultShape("square")'>
+    <input type="button" value="Pentagono" onclick='defaultShape("pentagon")'>
+    <input type="button" value="Esagono" onclick='defaultShape("hexagon")'>
+  </div>
+
+  <div class='vector-array'>
+    <ul class='vector-list' id='vectorList'>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+
+</html>
