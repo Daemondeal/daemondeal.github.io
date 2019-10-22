@@ -110,10 +110,14 @@ function setMatrix(matrix){
 function fetchMatrix(){
   let ch = document.getElementById('matrix').children;
 
-  multMatrix[0][0] = ch[0].value;
-  multMatrix[0][1] = ch[1].value;
-  multMatrix[1][0] = ch[3].value;
-  multMatrix[1][1] = ch[4].value;
+  let m = [[0, 0], [0, 0]]
+
+  m[0][0] = ch[0].value;
+  m[0][1] = ch[1].value;
+  m[1][0] = ch[3].value;
+  m[1][1] = ch[4].value;
+
+  multMatrix = m;
 }
 
 let rotInterval;
@@ -151,7 +155,7 @@ function fetchAllVectors(){
   let list = document.getElementById("vectorList");
 
   for(let ch of list.children){
-    vectors.push([parseInt(ch.children[0].value), parseInt(ch.children[2].value)]);
+    vectors.push([parseFloat(ch.children[0].value), parseFloat(ch.children[2].value)]);
   }
 }
 
