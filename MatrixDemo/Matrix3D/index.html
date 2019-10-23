@@ -15,14 +15,17 @@
 </div>
 
 <div class='angle-sliders'>
-  X: <input type='range' min='0' max='90' value='45' class='angle-slider' id='xSlider'/>
-  Y: <input type='range' min='0' max='90' value='45' class='angle-slider' id='ySlider'/>
-  Z: <input type='range' min='0' max='90' value='45' class='angle-slider' id='zSlider'/>
+  X: <input type='range' min='0' max='90' value='0' class='angle-slider' id='xSlider'/>
+  Y: <input type='range' min='0' max='90' value='0' class='angle-slider' id='ySlider'/>
+  Z: <input type='range' min='0' max='90' value='0' class='angle-slider' id='zSlider'/>
 </div>
 <br>
 <div class='checkboxes'>
-  <input type='checkbox' id='connections' name='con'/>
-  <label for='con'>Connessioni</label>
+  <select name='dropdown' id='connections'>
+    <option value='noCon'>Nessuna Connessione</option>
+    <option selected='selected' value='someCon'>Qualcuna Connessione</option>
+    <option value='allCon'>Tutte le Connessioni</option>
+  </select>
 </div>
 
 </body>
