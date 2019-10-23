@@ -1,20 +1,31 @@
 let canvas;
 let ctx;
 
-let ySpeed = 5;
-
 let originPosition = [100, 100];
 let scaleFactor = [20, 20];
 let pointThickness = 2;
 
+let vectors3D = [
+  [0, 0, 0], [1, 0, 0], [1, 0, 1], [0, 0, 1],
+  [0, 1, 1], [0, 1, 0], [1, 1, 0], [1, 1, 1]
+]
+
 
 window.addEventListener('load', () => loadCanvas(), false);
+
+let connectionsCheckbox;
 
 function loadCanvas(){
     canvas = document.getElementById("main-canvas");
     ctx = canvas.getContext('2d');
 
     originPosition = [canvas.width/2, canvas.height/2];
+
+    sliders =   [document.getElementById('xSlider'),
+      document.getElementById('ySlider'),
+      document.getElementById('zSlider')];
+
+    connectionsCheckbox = document.getElementById('connections');
 
     window.setInterval(update, 1000/60);
 }
@@ -49,18 +60,67 @@ function draw(){
   ctx.strokeStyle = 'red';
   ctx.fillStyle = 'red';
 
-  drawConnectedPoints(vectors);
-
   let transformedVectors = [];
 
-  for (let vec of vectors){
-    transformedVectors.push(vecMatrixMult(vec, multMatrix));
+  for (let vec of vectors3D){
+    transformedVectors.push(projectPoint(vec));
   }
 
   ctx.strokeStyle = 'blue';
   ctx.fillStyle = 'blue';
 
-  drawConnectedPoints(transformedVectors);
+  if (connectionsCheckbox.checked)
+    drawAllConnections(transformedVectors);
+  else
+    drawPoints(transformedVectors);
+}
+
+let topView = [[1, 0, 0], [0, 0, 1]];
+
+function getRotationMatrices(x, y, z){
+  let d2a = Math.PI/180;
+  let radX = x*d2a;
+  let radY = y*d2a;
+  let radZ = z*d2a;
+
+  let xMatrix = [
+    [1, 0, 0], [0, cos(radX), -sin(radX)], [0, sin(radX), cos(radX)]
+  ];
+
+  let yMatrix = [
+    [cos(radY), 0, sin(radY)], [0, 1, 0], [-sin(radY), 0, cos(radY)]
+  ];
+
+  let zMatrix = [
+    [cos(radZ), -sin(radZ), 0], [sin(radZ), cos(radZ), 0], [0, 0, 1]
+  ];
+
+  return [xMatrix, yMatrix, zMatrix];
+}
+
+function cos(angle){
+  let c = Math.cos(angle);
+  if (c <= 0.000001) return 0;
+  return c;
+}
+
+function sin(angle){
+  let s = Math.sin(angle);
+  if (s <= 0.000001) return 0;
+  return s;
+}
+
+let sliders;
+
+function projectPoint(point){
+  let resVec = vecMatrixMult(point,
+    [[3, 0, 0], [0, 3, 0], [0, 0, 6]]);
+
+  for(let mat of getRotationMatrices(sliders[0].value, sliders[1].value, sliders[2].value)){
+    resVec = vecMatrixMult(resVec, mat);
+  }
+
+  return vecMatrixMult(resVec, topView);
 }
 
 function drawPoints(points){
@@ -88,6 +148,27 @@ function drawConnectedPoints(points){
     ctx.lineTo(nextV[0], nextV[1]);
     ctx.stroke();
 
+  }
+}
+
+function drawAllConnections(points){
+  for(let p of points){
+    let v = vectorToCanvasCoords(p);
+
+    ctx.beginPath();
+    ctx.arc(v[0], v[1], pointThickness, 0, 2*Math.PI, false);
+    ctx.fill();
+    ctx.stroke();
+
+    for (let p2 of points){
+      if (p != p2){
+        let v2 = vectorToCanvasCoords(p2);
+        ctx.beginPath();
+        ctx.moveTo(v[0], v[1]);
+        ctx.lineTo(v2[0], v2[1]);
+        ctx.stroke();
+      }
+    }
   }
 }
 
