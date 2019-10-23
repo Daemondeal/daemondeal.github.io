@@ -113,8 +113,7 @@ function getRotationMatrices(x, y, z){
 }
 
 function projectPoint(point){
-  let resVec = vecMatrixMult(point,
-    [[3, 0, 0], [0, 3, 0], [0, 0, 6]]);
+  let resVec = vecMatrixMult(point, multMatrix);
 
   for(let mat of getRotationMatrices(sliders[0].value, sliders[1].value, sliders[2].value)){
     resVec = vecMatrixMult(resVec, mat);

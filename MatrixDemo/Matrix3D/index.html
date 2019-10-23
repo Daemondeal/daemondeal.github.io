@@ -6,6 +6,7 @@
 <title>Matrix Multiplication demo</title>
 <link rel='stylesheet' type='text/css' href='style.css'/>
 <script src='show3dMatrix.js'></script>
+<script src='manageMatrix.js'></script>
 </head>
 
 <body>
@@ -15,17 +16,29 @@
 </div>
 
 <div class='angle-sliders'>
-  X: <input type='range' min='0' max='90' value='0' class='angle-slider' id='xSlider'/>
+  X: <input type='range' min='0' max='90' value='45' class='angle-slider' id='xSlider'/>
   Y: <input type='range' min='0' max='90' value='0' class='angle-slider' id='ySlider'/>
-  Z: <input type='range' min='0' max='90' value='0' class='angle-slider' id='zSlider'/>
+  Z: <input type='range' min='0' max='90' value='45' class='angle-slider' id='zSlider'/>
 </div>
 <br>
-<div class='checkboxes'>
+<div class='listbox'>
   <select name='dropdown' id='connections'>
     <option value='noCon'>Nessuna Connessione</option>
     <option selected='selected' value='someCon'>Qualcuna Connessione</option>
     <option value='allCon'>Tutte le Connessioni</option>
-  </select>
+  </select> <br>
+</div>
+
+<div class="matrix" id='matrix'>
+  <input type='number' step='.1' onchange='fetchMatrix()'/>
+  <input type='number' step='.1' onchange='fetchMatrix()'/>
+  <input type='number' step='.1' onchange='fetchMatrix()'/> <br>
+  <input type='number' step='.1' onchange='fetchMatrix()'/>
+  <input type='number' step='.1' onchange='fetchMatrix()'/>
+  <input type='number' step='.1' onchange='fetchMatrix()'/> <br>
+  <input type='number' step='.1' onchange='fetchMatrix()'/>
+  <input type='number' step='.1' onchange='fetchMatrix()'/>
+  <input type='number' step='.1' onchange='fetchMatrix()'/>
 </div>
 
 </body>
