@@ -5,12 +5,20 @@ let originPosition = [100, 100];
 let scaleFactor = [20, 20];
 let pointThickness = 2;
 
-let vectors3D = [
+let vectors3DCube = [
   [0, 0, 0], [1, 0, 0], [1, 0, 1], [0, 0, 1],
   [0, 1, 1], [1, 1, 1], [1, 1, 0], [0, 1, 0]
 ]
 
+let vectors3D = [
+  [0, 0, 0], [-1, 0, 1], [1, 0, 1], [0, 1, 0.5]
+]
+
 let connectedPoints = [
+[1, 0]
+]
+
+let connectedPointsCube = [
   [0, 1], [1, 2], [2, 3], [3, 0],
   [4, 5], [5, 6], [6, 7], [7, 4],
   [0, 7], [1, 6], [2, 5], [3, 4]
