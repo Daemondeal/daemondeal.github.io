@@ -1,5 +1,5 @@
 let multMatrix = [
-  [3, 0, 0], [0, 3, 0], [0, 0, 6]
+  [3, 0, 0], [0, 3, 0], [0, 0, 3]
 ]
 
 function fetchMatrix(){
@@ -40,6 +40,6 @@ function setMatrix(matrix){
 
 window.addEventListener('load', () => {
   setMatrix([
-    [3, 0, 0], [0, 3, 0], [0, 0, 6]
+    [3, 0, 0], [0, 3, 0], [0, 0, 3]
   ])
 }, false);

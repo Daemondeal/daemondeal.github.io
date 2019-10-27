@@ -44,7 +44,7 @@ class Vector3{
   }
 
   normalize(){
-    return this.scale(1/this.norm);
+    return this.divideScale(this.norm());
   }
 
   add(vector){
@@ -63,6 +63,14 @@ class Vector3{
     let result = [];
     for (let x of this.vec){
       result.push(x*scalar);
+    }
+    return Vector3.fromArray(result);
+  }
+
+  divideScale(scalar){
+    let result = [];
+    for (let x of this.vec){
+      result.push(x/scalar);
     }
     return Vector3.fromArray(result);
   }

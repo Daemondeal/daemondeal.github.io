@@ -14,13 +14,17 @@
 <body>
 
 <div class="canvas-holder">
-  <canvas id='main-canvas' width='400px' height='500px'></canvas>
+  <canvas id='topCanvas' width='400px' height='500px'></canvas>
+  <canvas id='frontCanvas' width='400px' height='500px'></canvas>
+  <canvas id='rightCanvas' width='400px' height='500px'></canvas>
 </div>
 
 <div class='angle-sliders'>
-  X: <input type='range' min='0' max='90' value='45' class='angle-slider' id='xSlider'/>
-  Y: <input type='range' min='0' max='90' value='0' class='angle-slider' id='ySlider'/>
-  Z: <input type='range' min='0' max='90' value='45' class='angle-slider' id='zSlider'/>
+  X: <input type='range' min='-1' max='1' value='0' step='0.001' class='angle-slider' id='xSlider'/>
+  Y: <input type='range' min='-1' max='1' value='1' step='0.001' class='angle-slider' id='ySlider'/>
+  Z: <input type='range' min='-1' max='1' value='0' step='0.001' class='angle-slider' id='zSlider'/>
+
+  Theta: <input type='range' min='0' max='90' value='45' class='angle-slider' id='thetaSlider'/>
 </div>
 <br>
 <div class='listbox'>

@@ -91,13 +91,3 @@ class Quaternion{
     return res;
   }
 }
-
-let t = new Quaternion(3, 1, -2, 1);
-
-let testAngle = 20 * Math.PI / 180;
-
-let q = Quaternion.fromAngle(testAngle, new Vector3(1, 0, 0));
-
-console.log(q.toString());
-
-console.log(q.conjugateFunction(new Vector3(10, 10, 10)).toString());
