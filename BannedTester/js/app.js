@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var deckStringTextArea = document.getElementById("deck-string");
 function loadDeck() {
     return __awaiter(this, void 0, void 0, function () {
-        var root, rawDeckString, deckString, _i, _a, line, cardDeck, list, _b, _c, card, deckContainer, deckLabel, bannedCardsContainer, bannedLabel, bannedList, testCard, banlist, bannedCards, _d, _e, card, _f, bannedCards_1, card;
+        var root, rawDeckString, deckString, _i, _a, line, cardDeck, list, _b, _c, card, deckContainer, deckLabel, bannedCardsContainer, bannedLabel, bannedList, banlist_1, bannedCards, _d, _e, card, noBannedLabel, _f, bannedCards_1, card, errorLabel;
         return __generator(this, function (_g) {
             root = document.getElementById("app");
             root.innerHTML = "";
@@ -50,40 +50,55 @@ function loadDeck() {
                     deckString += line;
             }
             cardDeck = Deck.fromDeckString(deckString);
-            list = document.createElement("ul");
-            list.className = "card-deck";
-            for (_b = 0, _c = cardDeck.cards; _b < _c.length; _b++) {
-                card = _c[_b];
-                list.appendChild(generateCardDiv(card));
+            if (cardDeck) {
+                list = document.createElement("ul");
+                list.className = "card-deck";
+                for (_b = 0, _c = cardDeck.cards; _b < _c.length; _b++) {
+                    card = _c[_b];
+                    list.appendChild(generateCardDiv(card));
+                }
+                deckContainer = document.createElement("div");
+                deckContainer.className = "six columns";
+                deckLabel = document.createElement("label");
+                deckLabel.textContent = "Deck:";
+                deckContainer.appendChild(deckLabel);
+                deckContainer.appendChild(list);
+                root.appendChild(deckContainer);
+                bannedCardsContainer = document.createElement("div");
+                bannedCardsContainer.className = "six columns";
+                bannedLabel = document.createElement("label");
+                bannedLabel.textContent = "Banned Cards: ";
+                bannedList = document.createElement("ul");
+                bannedList.className = "card-deck";
+                banlist_1 = banlistDictionary[cardDeck.heroClass];
+                bannedCards = [];
+                for (_d = 0, _e = cardDeck.cards; _d < _e.length; _d++) {
+                    card = _e[_d];
+                    if (banlist_1.indexOf(card.dbfId) > -1)
+                        bannedCards.push(card);
+                }
+                if (bannedCards.length == 0) {
+                    noBannedLabel = document.createElement("label");
+                    noBannedLabel.textContent = "No banned cards.";
+                    noBannedLabel.className = "no-banned";
+                    bannedCardsContainer.appendChild(noBannedLabel);
+                }
+                else {
+                    for (_f = 0, bannedCards_1 = bannedCards; _f < bannedCards_1.length; _f++) {
+                        card = bannedCards_1[_f];
+                        bannedList.appendChild(generateCardDiv(card));
+                    }
+                    bannedCardsContainer.appendChild(bannedLabel);
+                    bannedCardsContainer.appendChild(bannedList);
+                }
+                root.appendChild(bannedCardsContainer);
             }
-            deckContainer = document.createElement("div");
-            deckContainer.className = "six columns";
-            deckLabel = document.createElement("label");
-            deckLabel.textContent = "Deck:";
-            deckContainer.appendChild(deckLabel);
-            deckContainer.appendChild(list);
-            root.appendChild(deckContainer);
-            bannedCardsContainer = document.createElement("div");
-            bannedCardsContainer.className = "six columns";
-            bannedLabel = document.createElement("label");
-            bannedLabel.textContent = "Banned Cards: ";
-            bannedList = document.createElement("ul");
-            bannedList.className = "card-deck";
-            testCard = getFromDatabase(68203, 6);
-            banlist = banlistDictionary[cardDeck.heroClass];
-            bannedCards = [];
-            for (_d = 0, _e = cardDeck.cards; _d < _e.length; _d++) {
-                card = _e[_d];
-                if (banlist.indexOf(card.dbfId) > -1)
-                    bannedCards.push(card);
+            else {
+                errorLabel = document.createElement("label");
+                errorLabel.textContent = "Invalid deck string.";
+                errorLabel.className = "error-message";
+                root.appendChild(errorLabel);
             }
-            for (_f = 0, bannedCards_1 = bannedCards; _f < bannedCards_1.length; _f++) {
-                card = bannedCards_1[_f];
-                bannedList.appendChild(generateCardDiv(card));
-            }
-            bannedCardsContainer.appendChild(bannedLabel);
-            bannedCardsContainer.appendChild(bannedList);
-            root.appendChild(bannedCardsContainer);
             return [2 /*return*/];
         });
     });

@@ -1,8 +1,17 @@
 .title {
     text-align: center;
 }
+
 .header {
     margin-top: 50px;
+}
+
+.no-banned {
+    color: green;
+}
+
+.error-message {
+    color: red;
 }
 
 .tooltip {

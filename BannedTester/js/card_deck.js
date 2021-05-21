@@ -35,6 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var possibleClasses = ["Demon Hunter", "Druid", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior"];
 var Format;
 (function (Format) {
     Format[Format["Wild"] = 1] = "Wild";
@@ -55,34 +56,46 @@ var Deck = /** @class */ (function () {
         return res;
     };
     Deck.fromDeckString = function (deckString) {
-        var data = base64ToVarIntArray(deckString);
-        var format = data[2];
-        var heroClass = capitalize(getFromDatabaseRaw(data[4])['cardClass']);
-        if (heroClass == "Demonhunter")
-            heroClass = "Demon Hunter";
-        var currentBlock = 3;
-        var heroes = data[currentBlock];
-        currentBlock += heroes + 1;
-        var singleCards = data[currentBlock];
-        var cards = [];
-        currentBlock++;
-        for (var i = currentBlock; i < currentBlock + singleCards; i++) {
-            cards.push(getFromDatabase(data[i], 1));
+        try {
+            var data = base64ToVarIntArray(deckString);
+            assert(data.length > 5);
+            console.log(data);
+            var format = data[2];
+            assert(data[0] === 0 && data[1] === 1 && data[3] <= 3);
+            var heroClass = capitalize(getFromDatabaseRaw(data[4])['cardClass']);
+            if (heroClass === "Demonhunter")
+                heroClass = "Demon Hunter";
+            assert(possibleClasses.indexOf(heroClass) > -1);
+            var currentBlock = 3;
+            var heroes = data[currentBlock];
+            assert(heroes === 1);
+            currentBlock += heroes + 1;
+            var singleCards = data[currentBlock];
+            assert(typeof singleCards === "number");
+            var cards = [];
+            currentBlock++;
+            for (var i = currentBlock; i < currentBlock + singleCards; i++) {
+                cards.push(getFromDatabase(data[i], 1));
+            }
+            currentBlock = currentBlock + singleCards;
+            var doubleCards = data[currentBlock];
+            assert(typeof doubleCards === "number");
+            currentBlock++;
+            for (var i = currentBlock; i < currentBlock + doubleCards; i++) {
+                cards.push(getFromDatabase(data[i], 2));
+            }
+            cards.sort(function (x, y) { return x.cost - y.cost; });
+            return new Deck(format, heroClass, cards);
         }
-        currentBlock = currentBlock + singleCards;
-        var doubleCards = data[currentBlock];
-        currentBlock++;
-        for (var i = currentBlock; i < currentBlock + doubleCards; i++) {
-            cards.push(getFromDatabase(data[i], 2));
+        catch (_a) {
+            return null;
         }
-        cards.sort(function (x, y) { return x.cost - y.cost; });
-        return new Deck(format, heroClass, cards);
     };
     return Deck;
 }());
 var database;
 function generateCardDiv(card) {
-    return htmlToElement("\n        <li class=\"card-frame free-card\" data-dbfId=\"" + card.dbfId + "\">\n            <span class=\"card-cost\">" + card.cost + "</span>\n            <span class=\"card-name\">" + card.name + "</span>\n            <span class=\"card-quantity\">" + card.quantity + "</span>\n            <span class=\"card-art\">\n                <img src=\"https://art.hearthstonejson.com/v1/tiles/" + card.id + ".png\" loading=lazy></img>\n            </span>\n        </li>\n        ");
+    return htmlToElement("\n        <li class=\"card-frame\" data-dbfId=\"" + card.dbfId + "\">\n            <span class=\"card-cost\">" + card.cost + "</span>\n            <span class=\"card-name\">" + card.name + "</span>\n            <span class=\"card-quantity\">" + card.quantity + "</span>\n            <span class=\"card-art\">\n                <img src=\"https://art.hearthstonejson.com/v1/tiles/" + card.id + ".png\" loading=lazy></img>\n            </span>\n        </li>\n        ");
 }
 function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
@@ -160,5 +173,10 @@ function fetchDatabase() {
             }
         });
     });
+}
+function assert(condition, msg) {
+    if (!condition) {
+        throw new Error(msg);
+    }
 }
 fetchDatabase();
