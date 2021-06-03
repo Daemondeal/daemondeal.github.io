@@ -11,7 +11,6 @@ async function loadDeck() {
             deckString += line;
     }
 
-    
     let cardDeck = Deck.fromDeckString(deckString);
 
     if (cardDeck) {
@@ -45,7 +44,17 @@ async function loadDeck() {
 
         let bannedCards: ICard[] = [];
         for (let card of cardDeck.cards) {
-            if (banlist.indexOf(card.dbfId) > -1) 
+            let inBannedSet = false;
+
+            for (let set of bannedSets) {
+                if (card.id.indexOf(set) > -1) {
+                    inBannedSet = true;
+                    break;
+                }
+            }
+
+
+            if (inBannedSet || banlist.indexOf(card.dbfId) > -1) 
                 bannedCards.push(card);
         }
 
@@ -77,6 +86,10 @@ async function loadDeck() {
 
     
 }
+
+let bannedSets: string[] = [
+    "WC"
+]; 
 
 let banlistDictionary: {[key: string]: number[]} = {
     "Demon Hunter":  [58487,69586,61127,56928,61968,61898,61135,559,66176,48158],

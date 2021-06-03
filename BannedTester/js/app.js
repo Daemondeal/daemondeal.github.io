@@ -38,8 +38,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var deckStringTextArea = document.getElementById("deck-string");
 function loadDeck() {
     return __awaiter(this, void 0, void 0, function () {
-        var root, rawDeckString, deckString, _i, _a, line, cardDeck, list, _b, _c, card, deckContainer, deckLabel, bannedCardsContainer, bannedLabel, bannedList, banlist_1, bannedCards, _d, _e, card, noBannedLabel, _f, bannedCards_1, card, errorLabel;
-        return __generator(this, function (_g) {
+        var root, rawDeckString, deckString, _i, _a, line, cardDeck, list, _b, _c, card, deckContainer, deckLabel, bannedCardsContainer, bannedLabel, bannedList, banlist_1, bannedCards, _d, _e, card, inBannedSet, _f, bannedSets_1, set, noBannedLabel, _g, bannedCards_1, card, errorLabel;
+        return __generator(this, function (_h) {
             root = document.getElementById("app");
             root.innerHTML = "";
             rawDeckString = deckStringTextArea.value;
@@ -74,7 +74,15 @@ function loadDeck() {
                 bannedCards = [];
                 for (_d = 0, _e = cardDeck.cards; _d < _e.length; _d++) {
                     card = _e[_d];
-                    if (banlist_1.indexOf(card.dbfId) > -1)
+                    inBannedSet = false;
+                    for (_f = 0, bannedSets_1 = bannedSets; _f < bannedSets_1.length; _f++) {
+                        set = bannedSets_1[_f];
+                        if (card.id.indexOf(set) > -1) {
+                            inBannedSet = true;
+                            break;
+                        }
+                    }
+                    if (inBannedSet || banlist_1.indexOf(card.dbfId) > -1)
                         bannedCards.push(card);
                 }
                 if (bannedCards.length == 0) {
@@ -84,8 +92,8 @@ function loadDeck() {
                     bannedCardsContainer.appendChild(noBannedLabel);
                 }
                 else {
-                    for (_f = 0, bannedCards_1 = bannedCards; _f < bannedCards_1.length; _f++) {
-                        card = bannedCards_1[_f];
+                    for (_g = 0, bannedCards_1 = bannedCards; _g < bannedCards_1.length; _g++) {
+                        card = bannedCards_1[_g];
                         bannedList.appendChild(generateCardDiv(card));
                     }
                     bannedCardsContainer.appendChild(bannedLabel);
@@ -103,6 +111,9 @@ function loadDeck() {
         });
     });
 }
+var bannedSets = [
+    "WC"
+];
 var banlistDictionary = {
     "Demon Hunter": [58487, 69586, 61127, 56928, 61968, 61898, 61135, 559, 66176, 48158],
     "Druid": [55035, 60016, 59705, 59029, 59001, 40465, 53551, 52438, 63027, 61964, 56687, 42656, 43417, 59450, 42759],
