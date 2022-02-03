@@ -5,20 +5,12 @@ import './App.css';
 import { strings } from "./strings";
 import { Container, Form, Button } from 'react-bootstrap';
 import React from 'react';
-import { parseFormula, formulaParserTest } from './formula-inserter/formulaParser';
+import { formulaParserTest } from './formula-inserter/formulaParser';
+import { FormulaTextArea } from './formula-inserter/FormulaTextArea';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      parsedEquation: {},
-      katexEquation: ""
-    };
-  }
-
-  handleTextChange(event) {
-    this.setState(parseFormula(event.target.value));
   }
 
   render() {
@@ -26,18 +18,11 @@ export default class App extends React.Component {
       <div className="App">
         <Container>
           <Form className="mt-5 border">
-            <Form.Group className="mb-3" controlId="formInputFormula">
-              <Form.Label>{strings.formulaFormText}</Form.Label>
-              <Form.Control size="lg" className="text-center mx-auto" style={{width: "95%"}} type="text" placeholder="C*2/3 - I*1/3" onChange={(e) => this.handleTextChange(e)} />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formShowFormula">
-              <Form.Label>{strings.formulaShowText}</Form.Label>
-              <BlockMath equation={this.state.katexEquation}/>
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="test">
-              <Button variant="primary" onClick={() => formulaParserTest()}>Test</Button>
-            </Form.Group>
+            <FormulaTextArea inputText={strings.formulaFormText} />
 
+            <Form.Group>
+              <Button variant="primary" className="mb-3" onClick={() => formulaParserTest()}>Test</Button>
+            </Form.Group>
           </Form>
   
         </Container>

@@ -97,11 +97,15 @@ function expr(queue, minBp) {
         case TokenType.MINUS:
             let [_, rbp] = getPrefixBindingPower(lhsToken.type);
             lhs = createUnaryNode(lhsToken.type, expr(queue, rbp));
+            break;
 
         case TokenType.LPAREN:
             lhs = createGroupingNode(expr(queue, 0));
             if (queue.consume().type !== TokenType.RPAREN)
                 throw new FormulaParserError("Mismatched parenthesis.");
+            break;
+        default:
+            throw new FormulaParserError(`Unexpected token ${lhsToken}.`);
     }
 
 
@@ -124,10 +128,14 @@ function expr(queue, minBp) {
 
                 queue.consume();
                 const rhs = expr(queue, rbp);
+                if (rhs === undefined)
+                    throw new FormulaParserError(`Expected rhs on ${op} operator.`);
                 
                 lhs = createBinaryNode(op.type, lhs, rhs);
 
                 continue;
+            default:
+                break Outer;
         }
 
         break;        
@@ -161,7 +169,6 @@ function tryPrettifyMultiplication(node) {
     const { lhs, rhs } = node;
 
     function tryPrettify(first, second) {
-        console.log("Trying");
         if (first.type === NodeType.ALPHA_LITERAL && second.type === NodeType.NUMBER_LITERAL) {
             return `${second.value} ${first.value}`;
         } else if (first.type === NodeType.GROUPING && (second.type === NodeType.NUMBER_LITERAL || second.type === NodeType.ALPHA_LITERAL)) {
@@ -174,10 +181,13 @@ function tryPrettifyMultiplication(node) {
     return tryPrettify(lhs, rhs) ?? tryPrettify(rhs, lhs);
 }
 
-function getKatexExpression(node) {
+export function getKatexExpression(node) {
     switch (node.type) {
         case NodeType.ALPHA_LITERAL:
-            return node.value;
+            if (node.value.length > 1)
+                return `\\text{${node.value}}`
+            else
+                return node.value;
         case NodeType.NUMBER_LITERAL:
             return String(node.value);
         case NodeType.BINARY:
@@ -187,7 +197,7 @@ function getKatexExpression(node) {
                     return `${getKatexExpression(node.lhs)} \\cdot ${getKatexExpression(node.rhs)}`;
                 else
                     return res;
-            } else if (node.operator == TokenType.SLASH) {
+            } else if (node.operator === TokenType.SLASH) {
                 return `\\frac{${getKatexExpression(node.lhs)}}{${getKatexExpression(node.rhs)}}`;
             } else {
                 return `${getKatexExpression(node.lhs)} ${tokenToString(node.operator)} ${getKatexExpression(node.rhs)}`
@@ -196,24 +206,15 @@ function getKatexExpression(node) {
             return `${tokenToString(node.operator)}${getKatexExpression(node.target)}`;
         case NodeType.GROUPING:
             return `\\left(${getKatexExpression(node.expr)}\\right)`;
+        default:
+            return "";
     }
 }
 
 export function formulaParserTest() {
-    console.log("Parsing");
-    const formula = "(1+2)*3";
-    const complexFormula = "1+(2+3)*4/5-(18sin(27))";
-    const invalidFormula = "1+43('";
-    const floatingFormula = "12.34 + 5";
+    const formula = "1+2-";
 
     const lexedFormula = lexFormula(formula);
-    const lexedComplex = lexFormula(complexFormula);
-    const lexedFloating = lexFormula(floatingFormula);
-    try {
-        const invalid = lexFormula(invalidFormula);
-    } catch (e) {
-    }
-
     const parsedFormula = parseTokens(lexedFormula);
 
     console.log(getKatexExpression(parsedFormula));
@@ -221,17 +222,9 @@ export function formulaParserTest() {
 
 export function parseFormula(formula) {
     try {
-        const parsedEquation = parseTokens(lexFormula(formula));
-        return {
-            parsedEquation,
-            katexEquation: getKatexExpression(parsedEquation),
-        };
+        return parseTokens(lexFormula(formula));
     } catch (e) {
-        return {
-            parsedEquation: {},
-            katexEquation: "",
-        }
+        return {};
     }
-
 }
 
