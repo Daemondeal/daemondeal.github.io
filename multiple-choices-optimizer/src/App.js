@@ -1,11 +1,11 @@
 import 'katex/dist/katex.min.css';
-import { BlockMath } from './components/BlockMath';
+import { BlockMath } from './formula-inserter/BlockMath';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { strings } from "./strings";
-import { Container, Row, Col, Form } from 'react-bootstrap';
+import { Container, Form, Button } from 'react-bootstrap';
 import React from 'react';
-import { parseFormula } from './formulaParser';
+import { parseFormula, formulaParserTest } from './formula-inserter/formulaParser';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -34,11 +34,13 @@ export default class App extends React.Component {
               <Form.Label>{strings.formulaShowText}</Form.Label>
               <BlockMath equation={this.state.katexEquation}/>
             </Form.Group>
+            <Form.Group className="mb-3" controlId="test">
+              <Button variant="primary" onClick={() => formulaParserTest()}>Test</Button>
+            </Form.Group>
+
           </Form>
   
         </Container>
-
-        Hi {this.state.katexEquation}
       </div>
     );
   }
