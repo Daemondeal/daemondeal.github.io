@@ -11,20 +11,34 @@ const themeSwitcher = {
   buttonAttribute: "data-theme-switcher",
   rootAttribute: "data-theme",
 
+  setTheme(theme) {
+    document
+      .querySelector("html")
+      .setAttribute(
+        this.rootAttribute,
+        theme
+      );
+  },
+
   // Init
   init() {
+    if (localStorage) {
+      if (localStorage.hasOwnProperty(this.rootAttribute))
+        this.setTheme(localStorage.getItem(this.rootAttribute));
+      else
+        localStorage.setItem(this.rootAttribute, "auto");
+    }
+
     document.querySelectorAll(this.buttonsTarget).forEach(
       function (button) {
         button.addEventListener(
           "click",
           function (event) {
             event.preventDefault();
-            document
-              .querySelector("html")
-              .setAttribute(
-                this.rootAttribute,
-                event.target.getAttribute(this.buttonAttribute)
-              );
+            const theme = event.target.getAttribute(this.buttonAttribute);
+            this.setTheme(theme);
+            if (localStorage)
+              localStorage.setItem(this.rootAttribute, theme);
           }.bind(this),
           false
         );
