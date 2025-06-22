@@ -1,0 +1,33 @@
+{% for game in games %}
+<article style="display: flex; gap: 1rem;" id="game-{{ game.id }}">
+  {% if game.cover %}
+  <img
+    src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{ game.cover.image_id }}.jpg"
+    alt="{{ game.name }} cover"
+    style="max-height: 8rem; border-radius: 0.25rem;">
+  {% endif %}
+
+  <div style="flex: 1;">
+    <strong>{{ game.name }}</strong>
+  </div>
+  <div class="container" style="display: flex; flex-direction: column; flex: 1;">
+    <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+      <form>
+        <input type="hidden" name="game_id" value="{{game.id}}">
+        <button 
+          hx-post="/hide-game"
+          hx-swap="outerHTML"
+          hx-target="#game-{{ game.id }}">
+          Hide
+        </button>
+      </form>
+      <button 
+        hx-get="/add-game-dialog" 
+        hx-target="#dialog-content" 
+        hx-swap="innerHTML" 
+        hx-vals='{"game_id": "{{ game.id }}"}'
+        hx-on:htmx:after-on-load="openDialog()">Add</button>
+      </div>
+  </div>
+</article>
+{% endfor %}

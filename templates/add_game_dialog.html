@@ -1,0 +1,90 @@
+{# 
+    Title
+    Genre
+    Series
+    Status
+    Platform
+    Estimated Hours
+    Owned
+    Notes
+#}
+
+<header>
+    <button aria-label="Close" rel="prev" onclick="closeDialog()"></button>
+    <p>
+        <strong>{{ game.name }}</strong>
+    </p>
+</header>
+
+<div class="grid">
+    {% if game.cover %}
+    <img
+        src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{ game.cover.image_id }}.jpg"
+        alt="{{ game.name }} cover"
+        style="width: 100%; border-radius: 0.25rem;">
+    {% endif %}
+    <form
+        hx-post="/add-game"
+        hx-swap="none"
+        id="dialog-form"
+        data-id="{{ game.id }}">
+        <!-- hx-on:htmx:after-on-load="gameAdded('{{ game.id }}')" > -->
+
+        <input type="hidden" name="id" value="{{ game.id }}">
+        <input type="hidden" name="title" value="{{ game.name }}">
+
+        {% if game.cover %}
+        <input type="hidden" name="img_id" value="{{ game.cover.image_id }}">
+        {% else %}
+        <input type="hidden" name="img_id" value="">
+        {% endif %}
+
+        <select aria-label="Platform" required name="platform">
+            <option selected disabled value="">
+                Platform
+            </option>
+            {% for platform in platforms %}
+            <option>{{ platform }}</option>
+            {% endfor %}
+        </select>
+
+        <select aria-label="Status" required name="status">
+            <option selected disabled value="">
+                Status
+            </option>
+            {% for status in statuses %}
+            <option>{{ status }}</option>
+            {% endfor %}
+        </select>
+
+        <input type="text" name="series" placeholder="Series">
+
+        <div class="grid">
+            <input type="text" name="genre" placeholder="Genre" required>
+            <input type="number" name="hours" placeholder="Estimated Hours" required>
+        </div>
+
+        <input type="text" name="sort_name" placeholder="Sort Name">
+
+        <div class="star-rating" id="starRating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+        </div>
+
+        <input type="hidden" name="rating" id="ratingInput" value="0">
+
+        <input type="checkbox" name="owned" role="switch">
+        <label for="owned" style="margin-bottom: 1em;">Owned</label>
+
+        <textarea placeholder="Notes" name="notes"></textarea>
+
+        <button type="submit">Add</button>
+    </form>
+</div>
+
+<p style="margin-top: 1em;">
+    {{ game.summary }}
+</p>
+

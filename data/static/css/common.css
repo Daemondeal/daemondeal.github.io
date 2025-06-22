@@ -1,0 +1,177 @@
+@media (min-width: 1124px) {
+    dialog > article {
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+.toastify {
+  z-index: 10000 !important;
+}
+
+.icons a {
+    font-size: 1.2rem;
+    color: var(--pico-contrast);
+}
+
+.icon-github {
+    width: 1em;
+    height: 1em;
+}
+
+
+/* .theme-toggler a.theme-toggle--toggled { */
+/*     color: #FFF; */
+/* } */
+
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title a {
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--pico-h1-color);
+}
+
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.game-card {
+    position: relative;
+    display: inline-block;
+    height: 12em;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.game-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.game-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.6);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+}
+
+.game-card:hover .overlay {
+    opacity: 1;
+}
+
+.game-title {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.game-status {
+    color: lightgray;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.game-status {
+  background-color: #1a1a1a;
+  padding: 0.4em 0.6em;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.status-finished {
+  color: #4caf50;
+}
+
+.status-playing {
+  color: #2196f3;
+}
+
+.status-unfinished {
+  color: #ff9800;
+}
+
+.status-dropped {
+  color: #f44336;
+}
+
+.status-backlog {
+  color: #9c27b0;
+}
+
+.status-unreleased {
+  color: #607d8b;
+}
+
+/* Star Rating */
+.star-rating {
+  display: inline-flex;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.star {
+  color:   #ccc;
+  transition: color 0.3s;
+  user-select: none;
+}
+
+.star.selected {
+  color: #f5c518;
+}
+
+.star.hovered {
+  color: #ffe066;
+}
+
+.filter-container {
+  display: flex;
+  gap: 1em;
+  height: 5em;
+  justify-content: space-between;
+}
+
+.filter-options {
+  display: flex;
+  gap: 1em;
+  height: 100%;
+}
+
+.filter-container input, .filter-container select {
+  width: 12em;
+  height: 100%;
+}
+
+.filter-update {
+  align-self: end;
+  display: block;
+  height: 3em;
+}

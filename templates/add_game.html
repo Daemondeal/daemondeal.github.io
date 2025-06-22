@@ -1,0 +1,109 @@
+{% extends "./base.html" %}
+
+{% block title %}
+Add Game
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+{% endblock %}
+
+{% block container %}
+<h1>Add Game</h1>
+
+<dialog id="new-game-dialog">
+    <article id="dialog-content" class="container-fluid modal">
+    </article>
+</dialog>
+
+<form id="search-form"
+      hx-get="/search"
+      hx-target="#search-results"
+      hx-trigger="submit"
+      class="search-form">
+
+    <div style="margin-bottom: 1em;">
+        <input type="checkbox" name="ignore_remakes">
+        <label for="ignore_remakes">Ignore Remakes</label>
+    </div>
+    <input type="text" name="query" placeholder="Search for a game..." required>
+    <button type="submit">Search</button>
+</form>
+
+<div id="search-results" class="search-results"></div>
+
+<script>
+  function openDialog() {
+    const dialog = document.getElementById('new-game-dialog');
+    setupStars();
+    setupForm();
+    if (!dialog.open) dialog.showModal();
+  }
+
+  function closeDialog() {
+    const dialog = document.getElementById('new-game-dialog');
+    if (dialog.open) {
+        dialog.close();
+    }
+  }
+
+  function setupForm() {
+    const form = document.getElementById("dialog-form");
+    const id = form.dataset.id;
+
+
+    form.addEventListener("htmx:afterOnLoad", (ev) => {
+      console.log(ev.detail.xhr);
+
+      if (ev.detail.xhr.status == 200) {
+        document.getElementById(`game-${id}`).remove();
+        Toastify({
+          text: "Game Added!",
+          duration: 3000
+        }).showToast();
+        closeDialog();
+      } else {
+        Toastify({
+          text: "Error!",
+          duration: 3000
+        }).showToast();
+      }
+
+    });
+
+  }
+
+
+  function setupStars() {
+    const stars = document.querySelectorAll('.star');
+    const ratingInput = document.getElementById('ratingInput');
+    let currentRating = 0;
+
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        currentRating = parseInt(star.getAttribute('data-value'));
+        updateStars(currentRating);
+        ratingInput.value = currentRating;
+      });
+
+      star.addEventListener('mouseenter', () => {
+        const hoverValue = parseInt(star.getAttribute('data-value'));
+        updateStars(hoverValue);
+      });
+
+      star.addEventListener('mouseleave', () => {
+        updateStars(currentRating);
+      });
+    });
+
+    function updateStars(rating) {
+      stars.forEach(star => {
+        const value = parseInt(star.getAttribute('data-value'));
+        star.classList.toggle('selected', value <= rating);
+      });
+    }
+  }
+</script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+{% endblock %}

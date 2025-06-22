@@ -1,0 +1,3292 @@
+statuses = [ "Playing", "Left Unfinished", "Dropped", "Backlog", "Unreleased", "Finished",]
+hidden = [ 130971, 195775,]
+[[games]]
+id = "205229"
+img_id = "co55p3"
+title = "Dragon Warrior"
+genre = "JRPG"
+series = "Dragon Quest"
+sort_name = "Dragon Quest 01"
+status = "Finished"
+platform = "Switch"
+rating = "3"
+hours = "41"
+owned = true
+notes = ""
+
+[[games]]
+id = "205592"
+img_id = "co8003"
+title = "Dragon Warrior II"
+genre = "JRPG"
+series = "Dragon Quest"
+status = "Finished"
+platform = "Switch"
+sort_name = "Dragon Quest 02"
+rating = "2"
+hours = "15"
+owned = true
+notes = ""
+
+[[games]]
+id = "149980"
+img_id = "co8d90"
+title = "Dragon Quest III: HD-2D Remake"
+genre = "JRPG"
+series = "Dragon Quest"
+status = "Backlog"
+platform = "Switch"
+sort_name = "Dragon Quest 03"
+rating = "0"
+hours = "41"
+owned = true
+notes = ""
+
+[[games]]
+id = "13557"
+img_id = "co44ma"
+title = "The Legend of Heroes: Trails of Cold Steel"
+genre = "JRPG"
+series = "Trails"
+status = "Finished"
+sort_name = "Trails 06"
+platform = "PC"
+hours = "60"
+rating = "3"
+owned = true
+notes = ""
+
+[[games]]
+id = "13558"
+img_id = "co44mb"
+title = "The Legend of Heroes: Trails of Cold Steel II"
+genre = "JRPG"
+series = "Trails"
+sort_name = "Trails 07"
+status = "Finished"
+platform = "PC"
+rating = "3"
+hours = "47"
+owned = true
+notes = ""
+
+[[games]]
+id = "26564"
+img_id = "co1mkb"
+title = "The Legend of Heroes: Trails of Cold Steel III"
+genre = "JRPG"
+sort_name = "Trails 08"
+series = "Trails"
+status = "Finished"
+platform = "PC"
+rating = "3"
+hours = "62"
+owned = true
+notes = ""
+
+[[games]]
+id = "78115"
+img_id = "co31wc"
+title = "The Legend of Heroes: Trails of Cold Steel IV"
+genre = "JRPG"
+sort_name = "Trails 09"
+series = "Trails"
+status = "Finished"
+rating = "3"
+platform = "PC"
+hours = "64"
+owned = true
+notes = ""
+
+[[games]]
+id = "8986"
+img_id = "co7ybm"
+title = "The Legend of Heroes: Trails in the Sky"
+genre = "JRPG"
+series = "Trails"
+status = "Finished"
+rating = "4"
+platform = "PC"
+hours = "40"
+sort_name = "Trails 01"
+owned = true
+notes = ""
+
+[[games]]
+id = "16665"
+img_id = "co74em"
+title = "The Legend of Heroes: Trails in the Sky SC"
+genre = "JRPG"
+series = "Trails"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "50"
+sort_name = "Trails 02"
+owned = true
+notes = ""
+
+[[games]]
+id = "28337"
+img_id = "co2uls"
+title = "13 Sentinels: Aegis Rim"
+genre = "VN"
+series = ""
+rating = "4"
+status = "Finished"
+platform = "Switch"
+hours = "30"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "104971"
+img_id = "co1mjy"
+title = "AI: The Somnium Files"
+genre = "VN"
+series = "AITSM"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "23"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "153808"
+img_id = "co4elc"
+title = "AI: The Somnium Files - Nirvana Initiative"
+genre = "VN"
+series = "AITSM"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "27"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "337023"
+img_id = "co9nc6"
+title = "No Sleep for Kaname Date: From AI - The Somnium Files"
+genre = "VN"
+series = "AITSM"
+rating = "0"
+status = "Unreleased"
+platform = "PC"
+hours = "0"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "191435"
+img_id = "co4hdh"
+title = "Animal Well"
+genre = "Puzzle"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "10"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11776"
+img_id = "co71xq"
+title = "Anonymous;Code"
+genre = "VN"
+series = "Sci;Adv"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "15"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "27719"
+img_id = "co1zta"
+title = "Ape Out"
+genre = "Action"
+series = ""
+rating = "2"
+status = "Finished"
+platform = "PC"
+hours = "3"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "113"
+img_id = "co6t4d"
+title = "Assassin's Creed Brotherhood"
+genre = "Action"
+series = "Assassin's Creed"
+rating = "2"
+status = "Finished"
+platform = "PS3"
+hours = "16"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "172820"
+img_id = "co4wvq"
+title = "Astlibra Revision"
+genre = "ARPG"
+series = ""
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "38"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1983"
+img_id = "co1qlj"
+title = "Bastion"
+genre = "Adventure"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "6"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "538"
+img_id = "co2n12"
+title = "BioShock Infinite"
+genre = "FPS"
+series = "Bioshock"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "12"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "78326"
+img_id = "co2vky"
+title = "Bravely Default: Flying Fairy"
+genre = "JRPG"
+series = "Bravely Default"
+rating = "3"
+status = "Finished"
+platform = "3DS"
+hours = "50"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11256"
+img_id = "co26hd"
+title = "Bravely Second: End Layer"
+genre = "JRPG"
+series = "Bravely Default"
+rating = "3"
+status = "Finished"
+platform = "3DS"
+hours = "55"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11392"
+img_id = "co2hmm"
+title = "Chaos;Head"
+genre = "VN"
+series = "Sci;Adv"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "24"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11393"
+img_id = "co26xc"
+title = "Chaos;Child"
+genre = "VN"
+series = "Sci;Adv"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "35"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "143825"
+img_id = "co2tsh"
+title = "CrossCode: A New Home"
+genre = "JRPG"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "Switch"
+hours = "10"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "35282"
+img_id = "co28wy"
+title = "CrossCode"
+genre = "JRPG"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "Switch"
+hours = "36"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "103287"
+img_id = "co62al"
+title = "Cuphead: The Delicious Last Course"
+genre = "Action"
+series = ""
+rating = "0"
+status = "Playing"
+platform = "PC"
+hours = "11"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "9061"
+img_id = "co62ao"
+title = "Cuphead"
+genre = "Action"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "11"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "7842"
+img_id = "co1n1w"
+title = "Danganronpa: Trigger Happy Havoc"
+genre = "VN"
+series = "Danganronpa"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "25"
+sort_name = "Danganronpa 1"
+owned = true
+notes = ""
+
+[[games]]
+id = "9694"
+img_id = "co2h6j"
+title = "Danganronpa 2: Goodbye Despair"
+genre = "VN"
+series = "Danganronpa"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "33"
+sort_name = "Danganronpa 2"
+owned = true
+notes = ""
+
+[[games]]
+id = "12579"
+img_id = "co1u57"
+title = "Danganronpa V3: Killing Harmony"
+genre = "VN"
+series = "Danganronpa"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "40"
+sort_name = "Danganronpa 3"
+owned = true
+notes = ""
+
+[[games]]
+id = "9708"
+img_id = "co9b1v"
+title = "Danganronpa Another Episode: Ultra Despair Girls"
+genre = "TPS"
+series = "Danganronpa"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "17"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2155"
+img_id = "co1x78"
+title = "Dark Souls"
+genre = "ARPG"
+series = "Soulsborne"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "30"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2368"
+img_id = "co2eoo"
+title = "Dark Souls II"
+genre = "ARPG"
+series = "Soulsborne"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "36"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11133"
+img_id = "co1vcf"
+title = "Dark Souls III"
+genre = "ARPG"
+series = "Soulsborne"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "36"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1254"
+img_id = "co1u77"
+title = "DmC: Devil May Cry"
+genre = "Action"
+series = "Devil May Cry"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "12"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "55935"
+img_id = "co6p5e"
+title = "Doki Doki Literature Club!"
+genre = "VN"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "6"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "76"
+img_id = "co2mvs"
+title = "Dragon Age: Origins"
+genre = "ORPG"
+series = "Dragon Age"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "50"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1815"
+img_id = "co2mw7"
+title = "Dragon Quest IV: Chapters of the Chosen"
+genre = "JRPG"
+series = "Dragon Quest"
+rating = "4"
+status = "Finished"
+platform = "NDS"
+hours = "27"
+sort_name = "Dragon Quest 04"
+owned = true
+notes = ""
+
+[[games]]
+id = "16585"
+img_id = "co7tre"
+title = "Dragon Quest V: Hand of the Heavenly Bride"
+genre = "JRPG"
+series = "Dragon Quest"
+rating = "4"
+status = "Finished"
+platform = "NDS"
+hours = "30"
+sort_name = "Dragon Quest 05"
+owned = true
+notes = ""
+
+[[games]]
+id = "1817"
+img_id = "co7yuz"
+title = "Dragon Quest VI: Realms of Revelation"
+genre = "JRPG"
+series = "Dragon Quest"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "40"
+sort_name = "Dragon Quest 06"
+owned = true
+notes = ""
+
+[[games]]
+id = "23913"
+img_id = "co1x9h"
+title = "Dragon Quest VII: Fragments of the Forgotten Past"
+genre = "JRPG"
+series = "Dragon Quest"
+rating = "3"
+status = "Finished"
+platform = "3DS"
+hours = "80"
+sort_name = "Dragon Quest 07"
+owned = true
+notes = ""
+
+[[games]]
+id = "1820"
+img_id = "co7wt9"
+title = "Dragon Quest IX: Sentinels of the Starry Skies"
+genre = "JRPG"
+series = "Dragon Quest"
+rating = "4"
+status = "Finished"
+platform = "NDS"
+hours = "48"
+sort_name = "Dragon Quest 09"
+owned = true
+notes = ""
+
+[[games]]
+id = "1824"
+img_id = "co8j66"
+title = "Dragon Quest Heroes: Rocket Slime"
+genre = "ARPG"
+series = "Dragon Quest Spinoff"
+rating = "4"
+status = "Finished"
+platform = "NDS"
+hours = "12"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "9214"
+img_id = "co1u5j"
+title = "Dragon Quest Heroes: The World Tree's Woe and the Blight Below"
+genre = "Musou"
+series = "Dragon Quest Spinoff"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "25"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "254332"
+img_id = "co6wnn"
+title = "Dragon Quest Monsters: The Dark Prince"
+genre = "JRPG"
+series = "Dragon Quest Spinoff"
+rating = "3"
+status = "Finished"
+platform = "Switch"
+hours = "40"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "17460"
+img_id = "co2w2b"
+title = "Dragon Quest Monsters: Joker"
+genre = "JRPG"
+series = "Dragon Quest Spinoff"
+rating = "4"
+status = "Finished"
+platform = "NDS"
+hours = "23"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11635"
+img_id = "co4agx"
+title = "Drakengard"
+genre = "Musou"
+series = "Drakengard"
+rating = "3"
+status = "Finished"
+platform = "PS2"
+hours = "20"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "119133"
+img_id = "co4jni"
+title = "Elden Ring"
+genre = "ARPG"
+series = "Soulsborne"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "200"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11567"
+img_id = "co1qv7"
+title = "Elex"
+genre = "ORPG"
+series = "ELEX"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "27"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2029"
+img_id = "co2sb1"
+title = "Evoland"
+genre = "ARPG"
+series = "Evoland"
+rating = "2"
+status = "Finished"
+platform = "PC"
+hours = "4"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "385"
+img_id = "co2xv8"
+title = "Final Fantasy"
+genre = "JRPG"
+series = "Final Fantasy"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "16"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "399"
+img_id = "co2y76"
+title = "Final Fantasy IV"
+genre = "JRPG"
+series = "Final Fantasy"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "21"
+sort_name = "Final Fantasy 4"
+owned = true
+notes = ""
+
+[[games]]
+id = "419"
+img_id = "co9p6d"
+title = "Final Fantasy V"
+genre = "JRPG"
+series = "Final Fantasy 5"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "32"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "426"
+img_id = "co31c2"
+title = "Final Fantasy VI"
+genre = "JRPG"
+series = "Final Fantasy"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "34"
+sort_name = "Final Fantasy 6"
+owned = true
+notes = ""
+
+[[games]]
+id = "1174"
+img_id = "co25qp"
+title = "Golden Sun: Dark Dawn"
+genre = "JRPG"
+series = "Golden Sun"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "27"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "4838"
+img_id = "co2g6i"
+title = "Guacamelee!"
+genre = "Metroidvania"
+series = "Guacamelee"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "7"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "5618"
+img_id = "co2fd3"
+title = "Hell Yeah! Wrath of the Dead Rabbit"
+genre = "Metroidvania"
+series = "Hell Yeah"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "7"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "9700"
+img_id = "co6yw6"
+title = "Higurashi When They Cry"
+genre = "VN"
+series = ""
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "88"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "14593"
+img_id = "co93cr"
+title = "Hollow Knight"
+genre = "Metroidvania"
+series = "Hollow Knight"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "30"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "139090"
+img_id = "co401c"
+title = "Inscryption"
+genre = "Roguelike"
+series = ""
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "15"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "8187"
+img_id = "co24o5"
+title = "Just Cause 3"
+genre = "Action"
+series = "Just Cause"
+rating = "2"
+status = "Finished"
+platform = "PC"
+hours = "18"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1223"
+img_id = "co31qj"
+title = "Kingdom Hearts 358/2 Days"
+genre = "ARPG"
+series = "Kingdom Hearts"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "26"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2682"
+img_id = "co1qrr"
+title = "LEGO Star Wars: The Complete Saga"
+genre = "Action"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "13"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2042"
+img_id = "co1qru"
+title = "Magicka"
+genre = "Action"
+series = "Magicka"
+rating = "2"
+status = "Finished"
+platform = "PC"
+hours = "10"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "37151"
+img_id = "co22a7"
+title = "Mario & Luigi: Superstar Saga + Bowser's Minions"
+genre = "JRPG"
+series = "Mario & Luigi"
+rating = "3"
+status = "Finished"
+platform = "3DS"
+hours = "20"
+sort_name = "Mario & Luigi 1"
+owned = true
+notes = ""
+
+[[games]]
+id = "3364"
+img_id = "co21rk"
+title = "Mario & Luigi: Partners in Time"
+genre = "JRPG"
+series = "Mario & Luigi"
+rating = "4"
+status = "Finished"
+platform = "NDS"
+hours = "18"
+sort_name = "Mario & Luigi 2"
+owned = true
+notes = ""
+
+[[games]]
+id = "3363"
+img_id = "co21vr"
+title = "Mario & Luigi: Bowser's Inside Story"
+genre = "JRPG"
+series = "Mario & Luigi"
+rating = "4"
+status = "Finished"
+platform = "NDS"
+hours = "22"
+sort_name = "Mario & Luigi 3"
+owned = true
+notes = ""
+
+[[games]]
+id = "3365"
+img_id = "co4ahq"
+title = "Mario & Luigi: Dream Team"
+genre = "JRPG"
+series = "Mario & Luigi"
+rating = "3"
+status = "Finished"
+platform = "3DS"
+hours = "40"
+sort_name = "Mario & Luigi 4"
+owned = true
+notes = ""
+
+[[games]]
+id = "73"
+img_id = "co1x7o"
+title = "Mass Effect"
+genre = "ORPG"
+series = "Mass Effect"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "17"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "74"
+img_id = "co20ac"
+title = "Mass Effect 2"
+genre = "ORPG"
+series = "Mass Effect"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "24"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "75"
+img_id = "co1x7q"
+title = "Mass Effect 3"
+genre = "ORPG"
+series = "Mass Effect"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "24"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "5328"
+img_id = "co1v88"
+title = "Metal Gear Solid V: Ground Zeroes"
+genre = "Adventure"
+series = "Metal Gear Solid"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "3"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "26602"
+img_id = "co8d9t"
+title = "Metaphor: ReFantazio"
+genre = "JRPG"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "64"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "3025"
+img_id = "co20pd"
+title = "Middle-earth: Shadow of Mordor"
+genre = "Action"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PS3"
+hours = "20"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "121"
+img_id = "co8fu6"
+title = "Minecraft: Java Edition"
+genre = "Sandbox"
+series = ""
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "10"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11059"
+img_id = "co3whm"
+title = "Naruto Shippuden: Ultimate Ninja Storm 4"
+genre = "Action"
+series = ""
+rating = "2"
+status = "Finished"
+platform = "PC"
+hours = "10"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11208"
+img_id = "co5pcj"
+title = "NieR: Automata"
+genre = "ARPG"
+series = "NieR"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "30"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "131999"
+img_id = "co5h0n"
+title = "NieR Replicant ver.1.22474487139..."
+genre = "ARPG"
+series = "NieR"
+rating = "4"
+status = "Unreleased"
+platform = "PC"
+hours = "30"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "225565"
+img_id = "co5rp6"
+title = "OneShot"
+genre = "VN"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "12"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "236694"
+img_id = "co64ro"
+title = "Paranormasight: The Seven Mysteries of Honjo"
+genre = "VN"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "Switch"
+hours = "12"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "14813"
+img_id = "co43ol"
+title = "Peggle Nights"
+genre = "Puzzle"
+series = "Peggle"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "3"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "3751"
+img_id = "co44ea"
+title = "Peggle"
+genre = "Puzzle"
+series = "Peggle"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "3"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "114283"
+img_id = "co1nic"
+title = "Persona 5 Royal"
+genre = "JRPG"
+series = "Persona"
+rating = "3"
+status = "Finished"
+platform = "Switch"
+hours = "100"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1426"
+img_id = "co5z8s"
+title = "Phoenix Wright: Ace Attorney"
+genre = "VN"
+series = "Ace Attorney"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "18"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1427"
+img_id = "co5z8t"
+title = "Phoenix Wright: Ace Attorney - Justice for All"
+genre = "VN"
+series = "Ace Attorney"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "18"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1428"
+img_id = "co5z8u"
+title = "Phoenix Wright: Ace Attorney - Trials and Tribulations"
+genre = "VN"
+series = "Ace Attorney"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "21"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "6898"
+img_id = "co56ef"
+title = "Pokémon Alpha Sapphire"
+genre = "JRPG"
+series = "Pokemon"
+rating = "3"
+status = "Finished"
+platform = "3DS"
+hours = "25"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1521"
+img_id = "co1z1x"
+title = "Pokémon Black Version"
+genre = "JRPG"
+series = "Pokemon"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "32"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "8284"
+img_id = "co1z8d"
+title = "Pokémon Black Version 2"
+genre = "JRPG"
+series = "Pokemon"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "32"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1560"
+img_id = "co1zht"
+title = "Pokémon Diamond Version"
+genre = "JRPG"
+series = "Pokemon"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "41"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1517"
+img_id = "co1zhr"
+title = "Pokémon Emerald Version"
+genre = "JRPG"
+series = "Pokemon"
+rating = "3"
+status = "Finished"
+platform = "GBA"
+hours = "31"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "1556"
+img_id = "co1z57"
+title = "Pokémon HeartGold Version"
+genre = "JRPG"
+series = "Pokemon"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "37"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "144054"
+img_id = "co3d03"
+title = "Pokémon Legends: Arceus"
+genre = "JRPG"
+series = "Pokemon"
+rating = "3"
+status = "Finished"
+platform = "Switch"
+hours = "50"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2319"
+img_id = "co21em"
+title = "Pokémon Mystery Dungeon: Red Rescue Team"
+genre = "Roguelike"
+series = "Pokemon MD"
+rating = "3"
+status = "Finished"
+platform = "GBA"
+hours = "24"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2323"
+img_id = "co7ovf"
+title = "Pokémon Mystery Dungeon: Explorers of Sky"
+genre = "Roguelike"
+series = "Pokemon MD"
+rating = "4"
+status = "Finished"
+platform = "NDS"
+hours = "24"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2322"
+img_id = "co1yzs"
+title = "Pokémon Mystery Dungeon: Explorers of Darkness"
+genre = "Roguelike"
+series = "Pokemon MD"
+rating = "4"
+status = "Finished"
+platform = "NDS"
+hours = "22"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1519"
+img_id = "co8gvp"
+title = "Pokémon Platinum Version"
+genre = "JRPG"
+series = "Pokemon"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "25"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "14606"
+img_id = "co1z5b"
+title = "Pokémon Ranger"
+genre = "ARPG"
+series = "Pokemon Ranger"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "11"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "4565"
+img_id = "co1z1q"
+title = "Pokémon Ranger: Guardian Signs"
+genre = "ARPG"
+series = "Pokemon Ranger"
+rating = "4"
+status = "Finished"
+platform = "NDS"
+hours = "20"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "14699"
+img_id = "co1yzl"
+title = "Pokémon Ranger: Shadows of Almia"
+genre = "ARPG"
+series = "Pokemon Ranger"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "20"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "10906"
+img_id = "co1zj4"
+title = "Pokémon Super Mystery Dungeon"
+genre = "Roguelike"
+series = "Pokemon MD"
+rating = "3"
+status = "Finished"
+platform = "3DS"
+hours = "23"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "37382"
+img_id = "co1zk2"
+title = "Pokémon Sword"
+genre = "JRPG"
+series = "Pokemon"
+rating = "2"
+status = "Finished"
+platform = "Switch"
+hours = "25"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "36792"
+img_id = "co1zjs"
+title = "Pokémon Ultra Sun"
+genre = "JRPG"
+series = "Pokemon"
+rating = "3"
+status = "Finished"
+platform = "3DS"
+hours = "33"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "18100"
+img_id = "co3co7"
+title = "Pokémon Sun"
+genre = "JRPG"
+series = "Pokemon"
+rating = "3"
+status = "Finished"
+platform = "3DS"
+hours = "30"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "72"
+img_id = "co1rs4"
+title = "Portal 2"
+genre = "Puzzle"
+series = "Portal"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "8"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "836"
+img_id = "co4t8l"
+title = "Prince of Persia: The Sands of Time"
+genre = "Action"
+series = "Prince of Persia"
+rating = "4"
+status = "Finished"
+platform = "PS2"
+hours = "10"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "837"
+img_id = "co9x1a"
+title = "Prince of Persia: Warrior Within"
+genre = "Action"
+series = "Prince of Persia"
+rating = "3"
+status = "Finished"
+platform = "PS2"
+hours = "10"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2437"
+img_id = "co4ta0"
+title = "Prince of Persia: The Two Thrones"
+genre = "Action"
+series = "Prince of Persia"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "10"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "570"
+img_id = "co1ql2"
+title = "Prototype"
+genre = "Action"
+series = "Prototype"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "12"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "26700"
+img_id = "co1tzv"
+title = "Raging Loop"
+genre = "VN"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "Switch"
+hours = "25"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "2444"
+img_id = "co1rjd"
+title = "Risen"
+genre = "ORPG"
+series = "Risen"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "28"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "3802"
+img_id = "co1rje"
+title = "Risen 2: Dark Waters"
+genre = "ORPG"
+series = "Risen"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "26"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "6142"
+img_id = "co223q"
+title = "Risen 3: Titan Lords"
+genre = "ORPG"
+series = "Risen"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "26"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "103406"
+img_id = "co27fe"
+title = "Robotics;Notes Elite"
+genre = "VN"
+series = "Sci;Adv"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "27"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1981"
+img_id = "co1nrn"
+title = "Saints Row IV"
+genre = "Action"
+series = "Saints Row"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "15"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "76882"
+img_id = "co2a23"
+title = "Sekiro: Shadows Die Twice"
+genre = "ARPG"
+series = "Soulsborne"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "40"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "5541"
+img_id = "co1sqz"
+title = "Sherlock Holmes: Crimes & Punishments"
+genre = "Puzzle"
+series = "Sherlock Holmes"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "12"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11563"
+img_id = "co3wmc"
+title = "Sherlock Holmes: The Devil's Daughter"
+genre = "Puzzle"
+series = "Sherlock Holmes"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "12"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "217"
+img_id = "co845t"
+title = "Sonic Chronicles: The Dark Brotherhood"
+genre = "JRPG"
+series = "Sonic"
+rating = "3"
+status = "Finished"
+platform = "NDS"
+hours = "16"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "3019"
+img_id = "co4b19"
+title = "Starbound"
+genre = "Sandbox"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "25"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "7194"
+img_id = "co5ff7"
+title = "Steins;Gate"
+genre = "VN"
+series = "Sci;Adv"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "35"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11394"
+img_id = "co24ua"
+title = "Steins;Gate 0"
+genre = "VN"
+series = "Sci;Adv"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "28"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "119270"
+img_id = "co5ls2"
+title = "Tales of Arise"
+genre = "ARPG"
+series = "Tales of"
+rating = "2"
+status = "Finished"
+platform = "PC"
+hours = "40"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "18812"
+img_id = "co1rk1"
+title = "Tales of Berseria"
+genre = "ARPG"
+series = "Tales of"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "44"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "6452"
+img_id = "co1rdq"
+title = "Tales of Zestiria"
+genre = "ARPG"
+series = "Tales of"
+rating = "2"
+status = "Finished"
+platform = "PC"
+hours = "42"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1879"
+img_id = "co1rbo"
+title = "Terraria"
+genre = "Sandbox"
+series = ""
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "100"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "472"
+img_id = "co1tnw"
+title = "The Elder Scrolls V: Skyrim"
+genre = "ORPG"
+series = "The Elder Scrolls"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "26"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "146075"
+img_id = "co2ylx"
+title = "The Great Ace Attorney Chronicles"
+genre = "VN"
+series = "Ace Attorney"
+rating = "4"
+status = "Finished"
+platform = "Switch"
+hours = "64"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "28101"
+img_id = "co23da"
+title = "The Legend of Heroes: Trails in the Sky the 3rd"
+genre = "JRPG"
+series = "Trails"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "33"
+sort_name = "Trails 03"
+owned = true
+notes = ""
+
+[[games]]
+id = "23322"
+img_id = "co57lc"
+title = "The Legend of Heroes: Trails from Zero"
+genre = "JRPG"
+series = "Trails"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "39"
+sort_name = "Trails 04"
+owned = true
+notes = ""
+
+[[games]]
+id = "23323"
+img_id = "co5ahi"
+title = "The Legend of Heroes: Trails to Azure"
+genre = "JRPG"
+series = "Trails"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "45"
+sort_name = "Trails 05"
+owned = true
+notes = ""
+
+[[games]]
+id = "136673"
+img_id = "co3bb2"
+title = "The Legend of Heroes: Trails into Reverie"
+genre = "JRPG"
+series = "Trails"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "42"
+sort_name = "Trails 10"
+owned = true
+notes = ""
+
+[[games]]
+id = "141833"
+img_id = "co7uf7"
+title = "The Legend of Heroes: Trails through Daybreak"
+genre = "JRPG"
+series = "Trails"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "52"
+sort_name = "Trails 11"
+owned = true
+notes = ""
+
+[[games]]
+id = "185864"
+img_id = "co8l3f"
+title = "The Legend of Heroes: Trails through Daybreak II"
+genre = "JRPG"
+series = "Trails"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "48"
+sort_name = "Trails 12"
+owned = true
+notes = ""
+
+[[games]]
+id = "9559"
+img_id = "co2xo0"
+title = "Titan Souls"
+genre = "Action"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "4"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "124948"
+img_id = "co78uy"
+title = "Umineko When They Cry: Question Arcs"
+genre = "VN"
+series = "Umineko"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "50"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "75081"
+img_id = "co78v5"
+title = "Umineko When They Cry: Answer Arcs"
+genre = "VN"
+series = "Umineko"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "64"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "12517"
+img_id = "co2855"
+title = "Undertale"
+genre = "JRPG"
+series = ""
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "20"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "23438"
+img_id = "ydguwxoyvekm5qp8g6um"
+title = "World End Economica"
+genre = "VN"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "25"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "122238"
+img_id = "co27kt"
+title = "Xenoblade Chronicles: Definitive Edition"
+genre = "JRPG"
+series = "Xenoblade"
+rating = "3"
+status = "Finished"
+platform = "Switch"
+hours = "52"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "21020"
+img_id = "co4vjt"
+title = "Ys I & II Chronicles"
+genre = "ARPG"
+series = "Ys"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "13"
+sort_name = "Ys 01"
+owned = true
+notes = ""
+
+[[games]]
+id = "10949"
+img_id = "co2z70"
+title = "Ys Origin"
+genre = "ARPG"
+series = "Ys"
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "23"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "25343"
+img_id = "co86n7"
+title = "Zero Escape: The Nonary Games"
+genre = "VN"
+series = "Zero Escape"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "17"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "6614"
+img_id = "co260l"
+title = "Zero Escape: Virtue's Last Reward"
+genre = "VN"
+series = "Zero Escape"
+rating = "4"
+status = "Finished"
+platform = "PC"
+hours = "35"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11549"
+img_id = "co86n5"
+title = "Zero Escape: Zero Time Dilemma"
+genre = "VN"
+series = "Zero Escape"
+rating = "0"
+status = "Dropped"
+platform = "PC"
+hours = "20"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "306153"
+img_id = "co9sfw"
+title = "The Hundred Line: Last Defense Academy"
+genre = "VN"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "Switch"
+hours = "50"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2129"
+img_id = "co2sfv"
+title = "Mark of the Ninja"
+genre = "Action"
+series = ""
+rating = "0"
+status = "Dropped"
+platform = "PC"
+hours = "0"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "1985"
+img_id = "co1v85"
+title = "Metal Gear Solid V: The Phantom Pain"
+genre = "Action"
+series = "Metal Gear Solid"
+rating = "0"
+status = "Dropped"
+platform = "PC"
+hours = "0"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "31819"
+img_id = "rbw9ltnum893cnarcg5g"
+title = "The Hex"
+genre = "Unknown"
+series = ""
+rating = "0"
+status = "Dropped"
+platform = "PC"
+hours = "6"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "27441"
+img_id = "co4hgb"
+title = "Wargroove"
+genre = "TRPG"
+series = ""
+rating = "0"
+status = "Dropped"
+platform = "PC"
+hours = "0"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "306154"
+img_id = "co8d8f"
+title = "Romancing SaGa 2: Revenge of the Seven"
+genre = "JRPG"
+series = "SaGa"
+rating = "0"
+status = "Playing"
+platform = "Switch"
+hours = "55"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "287850"
+img_id = "co7sv4"
+title = "Shin Megami Tensei V: Vengeance"
+genre = "JRPG"
+series = "Shin Megami Tensei"
+rating = "0"
+status = "Backlog"
+platform = "Switch"
+hours = "45"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "378"
+img_id = "co2l1t"
+title = "Metal Gear Rising: Revengeance"
+genre = "Action"
+series = "Metal Gear Solid"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "12"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "264410"
+img_id = "co70oi"
+title = "Mouthwashing"
+genre = "Unknown"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "Switch"
+hours = "3"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "305152"
+img_id = "co9gam"
+title = "Clair Obscur: Expedition 33"
+genre = "JRPG"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "42"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "75234"
+img_id = "co1jbb"
+title = "Guacamelee! 2"
+genre = "Metroidvania"
+series = "Guacamelee"
+rating = "0"
+status = "Left Unfinished"
+platform = "Switch"
+hours = "9"
+sort_name = ""
+owned = true
+notes = "Got softlocked in switch"
+
+[[games]]
+id = "206320"
+img_id = "co87df"
+title = "Chrono Trigger"
+genre = "JRPG"
+series = ""
+rating = "0"
+status = "Left Unfinished"
+platform = "PC"
+hours = "23"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "145528"
+img_id = "co2xc0"
+title = "Dragon Quest VIII: Journey of the Cursed King"
+genre = "JRPG"
+series = "Dragon Quest"
+rating = "0"
+status = "Left Unfinished"
+platform = "3DS"
+hours = "61"
+sort_name = "Dragon Quest 08"
+owned = true
+notes = ""
+
+[[games]]
+id = "27958"
+img_id = "co26im"
+title = "Radiant Historia: Perfect Chronology"
+genre = "JRPG"
+series = ""
+rating = "0"
+status = "Left Unfinished"
+platform = "3DS"
+hours = "30"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1039"
+img_id = "co600u"
+title = "The Legend of Zelda: Ocarina of Time 3D"
+genre = "Adventure"
+series = "The Legend of Zelda"
+rating = "0"
+status = "Left Unfinished"
+platform = "3DS"
+hours = "25"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "26820"
+img_id = "co9yoj"
+title = "Blasphemous"
+genre = "Metroidvania"
+series = "Blasphemous"
+rating = "0"
+status = "Left Unfinished"
+platform = "Switch"
+hours = "13"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "26845"
+img_id = "co1n8t"
+title = "Fire Emblem: Three Houses"
+genre = "TRPG"
+series = "Fire Emblem"
+rating = "0"
+status = "Left Unfinished"
+platform = "Switch"
+hours = "50"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "7346"
+img_id = "co3p2d"
+title = "The Legend of Zelda: Breath of the Wild"
+genre = "Adventure"
+series = "The Legend of Zelda"
+rating = "0"
+status = "Left Unfinished"
+platform = "Switch"
+hours = "50"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "498"
+img_id = "co20tx"
+title = "Borderlands"
+genre = "FPS"
+series = "Borderlands"
+rating = "0"
+status = "Left Unfinished"
+platform = "PC"
+hours = "22"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "11667"
+img_id = "co1x9d"
+title = "Dragon Quest XI: Echoes of an Elusive Age"
+genre = "JRPG"
+series = "Dragon Quest"
+rating = "0"
+status = "Left Unfinished"
+platform = "PC"
+hours = "89"
+sort_name = "Dragon Quest 11"
+owned = false
+notes = "Never finished Act 3"
+
+[[games]]
+id = "514"
+img_id = "co1utt"
+title = "F.E.A.R. 3"
+genre = "FPS"
+series = "FEAR"
+rating = "0"
+status = "Left Unfinished"
+platform = "PC"
+hours = "6"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "7047"
+img_id = "co887p"
+title = "The Last Remnant"
+genre = "JRPG"
+series = ""
+rating = "0"
+status = "Left Unfinished"
+platform = "PC"
+hours = "64"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "418"
+img_id = "co1tr1"
+title = "Final Fantasy X"
+genre = "JRPG"
+series = "Final Fantasy"
+rating = "0"
+status = "Left Unfinished"
+platform = "PS2"
+hours = "46"
+sort_name = "Final Fantasy 10"
+owned = true
+notes = ""
+
+[[games]]
+id = "117495"
+img_id = "co6ejg"
+title = "Ys: Memories of Celceta"
+genre = "ARPG"
+series = "Ys"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "21"
+sort_name = "Ys 04"
+owned = true
+notes = ""
+
+[[games]]
+id = "35626"
+img_id = "co2q9e"
+title = "Golf Story"
+genre = "Unknown"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "Switch"
+hours = "15"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "135913"
+img_id = "co9lzg"
+title = "Shin Megami Tensei III: Nocturne - HD Remaster"
+genre = "JRPG"
+series = "Shin Megami Tensei"
+rating = "0"
+status = "Backlog"
+platform = "Switch"
+hours = "50"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1343"
+img_id = "co1n67"
+title = "The World Ends with You"
+genre = "JRPG"
+series = "TWEWY"
+rating = "0"
+status = "Backlog"
+platform = "NDS"
+hours = "40"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "141192"
+img_id = "co8kzv"
+title = "NEO: The World Ends with You"
+genre = "JRPG"
+series = "TWEWY"
+rating = "0"
+status = "Backlog"
+platform = "Switch"
+hours = "40"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "34705"
+img_id = "co2ug9"
+title = "Iconoclasts"
+genre = "Metroidvania"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "Switch"
+hours = "11"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "20"
+img_id = "co2mli"
+title = "BioShock"
+genre = "FPS"
+series = "Bioshock"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "12"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "21"
+img_id = "co2mlj"
+title = "BioShock 2"
+genre = "FPS"
+series = "Bioshock"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "30"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1011"
+img_id = "co9ba3"
+title = "Borderlands 2"
+genre = "FPS"
+series = "Borderlands"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "30"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "105417"
+img_id = "co527f"
+title = "Digimon Survive"
+genre = "TRPG"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "40"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "78"
+img_id = "co2mw1"
+title = "Dragon Age II"
+genre = "ORPG"
+series = "Dragon Age"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "38"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1887"
+img_id = "co2mvy"
+title = "Dragon Age: Inquisition"
+genre = "ORPG"
+series = "Dragon Age"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "95"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "106122"
+img_id = "co1hcq"
+title = "Exapunks"
+genre = "Puzzle"
+series = "Zachtronics"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "26"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "9806"
+img_id = "co2edn"
+title = "Hyper Light Drifter"
+genre = "Action"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "8"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "8492"
+img_id = "co1odr"
+title = "Lisa: The Painful"
+genre = "JRPG"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "15"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "9174"
+img_id = "co1rdi"
+title = "Little Nightmares"
+genre = "Adventure"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "5"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "5552"
+img_id = "co2n69"
+title = "Oddworld: New 'n' Tasty"
+genre = "Platformer"
+series = "Oddworld"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "9"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1002"
+img_id = "co3gu1"
+title = "Oddworld: Stranger's Wrath"
+genre = "Platformer"
+series = "Oddworld"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "10"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "74545"
+img_id = "co1uac"
+title = "Opus Magnum"
+genre = "Puzzle"
+series = "Zachtronics"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "15"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2468"
+img_id = "co2i0q"
+title = "Prince of Persia: The Forgotten Sands"
+genre = "Action"
+series = "Prince of Persia"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "8"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "252476"
+img_id = "co6lli"
+title = "Prince of Persia: The Lost Crown"
+genre = "Metroidvania"
+series = "Prince of Persia"
+rating = "0"
+status = "Playing"
+platform = "Switch"
+hours = "20"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "2988"
+img_id = "co20jt"
+title = "Prototype 2"
+genre = "Action"
+series = "Prototype"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "14"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "131890"
+img_id = "co215b"
+title = "Sea of Stars"
+genre = "JRPG"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "28"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "59"
+img_id = "co8fpz"
+title = "The Elder Scrolls IV: Oblivion"
+genre = "ORPG"
+series = "The Elder Scrolls"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "28"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "36278"
+img_id = "co23cn"
+title = "The House in Fata Morgana"
+genre = "VN"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "29"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "141500"
+img_id = "co2v1m"
+title = "The Sekimeiya: Spun Glass"
+genre = "VN"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "42"
+sort_name = ""
+owned = false
+notes = "More of a puzzle than a VN as it seems"
+
+[[games]]
+id = "23733"
+img_id = "td1t8kb33gyo8mvhl2pc"
+title = "Tunic"
+genre = "Adventure"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "16"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "36550"
+img_id = "co2em9"
+title = "Yakuza: Like a Dragon"
+genre = "JRPG"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "31"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "25084"
+img_id = "co1uad"
+title = "Shenzhen I/O"
+genre = "Puzzle"
+series = "Zachtronics"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "35"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "56"
+img_id = "co2knd"
+title = "The Elder Scrolls III: Morrowind"
+genre = "ORPG"
+series = "The Elder Scrolls"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "44"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "478"
+img_id = "co1wy4"
+title = "The Witcher 2: Assassins of Kings"
+genre = "ORPG"
+series = "The Witcher"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "24"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "1942"
+img_id = "co1wyy"
+title = "The Witcher 3: Wild Hunt"
+genre = "ORPG"
+series = "The Witcher"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "51"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "3022"
+img_id = "co1pi1"
+title = "Transistor"
+genre = "Adventure"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "8"
+sort_name = ""
+owned = true
+notes = ""
+
+[[games]]
+id = "15455"
+img_id = "co4kwe"
+title = "Ys: The Oath in Felghana"
+genre = "ARPG"
+series = "Ys"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "11"
+sort_name = "Ys 03"
+owned = true
+notes = "Play Order - 5"
+
+[[games]]
+id = "15454"
+img_id = "co260i"
+title = "Ys VI: The Ark of Napishtim"
+genre = "ARPG"
+series = "Ys"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "13"
+sort_name = "Ys 06"
+owned = true
+notes = "Play Order - 6"
+
+[[games]]
+id = "3340"
+img_id = "co1qda"
+title = "Paper Mario"
+genre = "JRPG"
+series = "Paper Mario"
+rating = "0"
+status = "Backlog"
+platform = "N64"
+hours = "23"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "6886"
+img_id = "co1n26"
+title = "Shin Megami Tensei IV"
+genre = "JRPG"
+series = "Shin Megami Tensei"
+rating = "0"
+status = "Backlog"
+platform = "3DS"
+hours = "43"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "1701"
+img_id = "co5435"
+title = "Wario: Master of Disguise"
+genre = "Platformer"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "NDS"
+hours = "9"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "266690"
+img_id = "co83vd"
+title = "Paper Mario: The Thousand-Year Door"
+genre = "JRPG"
+series = "Paper Mario"
+rating = "0"
+status = "Backlog"
+platform = "Switch"
+hours = "30"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "228542"
+img_id = "co6ffo"
+title = "Armored Core VI: Fires of Rubicon"
+genre = "Action"
+series = "Armored Core"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "20"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "119171"
+img_id = "co670h"
+title = "Baldur's Gate 3"
+genre = "ORPG"
+series = "Baldur's Gate"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "62"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "122200"
+img_id = "co3mcx"
+title = "Bleak Faith: Forsaken"
+genre = "Action"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "20"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "126745"
+img_id = "co55qd"
+title = "Chrono Ark"
+genre = "Roguelike"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "33"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "76253"
+img_id = "co1rb4"
+title = "Devil May Cry 5"
+genre = "Action"
+series = "Devil May Cry"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "17"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "30208"
+img_id = "co8gj5"
+title = "Dragon Age: The Veilguard"
+genre = "ORPG"
+series = "Dragon Age"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "30"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "55147"
+img_id = "co39yr"
+title = "Elex II"
+genre = "ORPG"
+series = "ELEX"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "35"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "236660"
+img_id = "co692h"
+title = "Ghost Trick: Phantom Detective"
+genre = "VN"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "12"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "117988"
+img_id = "co9458"
+title = "Gnosia"
+genre = "VN"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "18"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "146054"
+img_id = "co2ybe"
+title = "I Was a Teenage Exocolonist"
+genre = "VN"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "11"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "194696"
+img_id = "co5bsf"
+title = "In Stars and Time"
+genre = "JRPG"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "18"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "205064"
+img_id = "co4vll"
+title = "Last Call BBS"
+genre = "Puzzle"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "18"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "194821"
+img_id = "co4l2s"
+title = "Nine Sols"
+genre = "Metroidvania"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "Switch"
+hours = "21"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "11737"
+img_id = "co65ac"
+title = "Outer Wilds"
+genre = "Unknown"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "16"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "252647"
+img_id = "co6z12"
+title = "Persona 3 Reload"
+genre = "JRPG"
+series = "Persona"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "68"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "234702"
+img_id = "co63fe"
+title = "Persona 4 Golden"
+genre = "JRPG"
+series = "Persona"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "68"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "229176"
+img_id = "co7s9q"
+title = "Ys X: Nordics"
+genre = "ARPG"
+series = "Ys"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "24"
+sort_name = "Ys 10"
+owned = false
+notes = ""
+
+[[games]]
+id = "10948"
+img_id = "co4vde"
+title = "Ys Seven"
+genre = "ARPG"
+series = "Ys"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "22"
+sort_name = "Ys 07"
+owned = false
+notes = ""
+
+[[games]]
+id = "27304"
+img_id = "co234k"
+title = "Ys VIII: Lacrimosa of Dana"
+genre = "ARPG"
+series = "Ys"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "37"
+sort_name = "Ys 08"
+owned = false
+notes = ""
+
+[[games]]
+id = "113431"
+img_id = "co2ate"
+title = "Ys IX: Monstrum Nox"
+genre = "ARPG"
+series = "Ys"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "27"
+sort_name = "Ys 09"
+owned = false
+notes = ""
+
+[[games]]
+id = "18018"
+img_id = "co2271"
+title = "Never7: The End of Infinity"
+genre = "VN"
+series = "Infinity"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "25"
+sort_name = "Infinity 1"
+owned = false
+notes = ""
+
+[[games]]
+id = "221220"
+img_id = "co6l8e"
+title = "Ever17"
+genre = "VN"
+series = "Infinity"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "35"
+sort_name = "Infinity 2"
+owned = false
+notes = ""
+
+[[games]]
+id = "18040"
+img_id = "co5rw6"
+title = "Remember11: The Age of Infinity"
+genre = "VN"
+series = "Infinity"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "25"
+sort_name = "Infinity 3"
+owned = false
+notes = ""
+
+[[games]]
+id = "183617"
+img_id = "co59vz"
+title = "Master Detective Archives: Rain Code"
+genre = "VN"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "Switch"
+hours = "31"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "340349"
+img_id = "co9okh"
+title = "Final Fantasy IX"
+genre = "JRPG"
+series = "Final Fantasy"
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "38"
+sort_name = "Final Fantasy 09"
+owned = false
+notes = ""
+
+[[games]]
+id = "96437"
+img_id = "co39vv"
+title = "Starfield"
+genre = "ORPG"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "PC"
+hours = "22"
+sort_name = ""
+owned = false
+notes = ""
+
+[[games]]
+id = "280573"
+img_id = "co9s6o"
+title = "The Legend of Heroes: Trails Beyond the Horizon"
+genre = "JRPG"
+series = "Trails"
+rating = "0"
+status = "Unreleased"
+platform = "PC"
+hours = "50"
+sort_name = "Trails 13"
+owned = false
+notes = ""
+

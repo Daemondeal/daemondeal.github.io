@@ -1,0 +1,48 @@
+{% extends "./base.html" %}
+
+{% block title %}
+Backlog
+{% endblock %}
+
+{% block container %}
+<h1>Backlog</h1>
+
+
+<article>
+  <p>
+    Games Completed: {{ count_games_finished }}/{{ games | length }}
+  </p>
+</article>
+
+<article class="filter-container">
+  <div class="filter-options">
+    <input type="text" placeholder="Name" id="filter-name">
+    <select id="filter-group-by">
+        <option selected disabled value="">
+          Group by
+        </option>
+        <option value="status">Status</option>
+        <option value="series">Series</option>
+        <option value="genre">Genre</option>
+        <option value="rating">Rating</option>
+    </select>
+  </div>
+
+  <button onclick="updateFilter()" class="filter-update">Update</button>
+</article>
+
+<dialog id="details-dialog">
+    <article id="dialog-content" class="container-fluid modal">
+    </article>
+</dialog>
+
+<div id="target">
+</div>
+
+<script type="text/javascript">
+  const games = {{ games | tojson }}
+</script>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/backlog.js') }}"></script>
+
+{% endblock %}

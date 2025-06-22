@@ -1,0 +1,9 @@
+{% extends "./base.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block container %}
+{{ content | md_to_html }}
+{% endblock %}
