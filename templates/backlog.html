@@ -4,14 +4,41 @@
 Backlog
 {% endblock %}
 
-{% block container %}
-<h1>Backlog</h1>
+{% block body_title %}
+<a href="https://daemondeal.github.io">
+  Backlog
+</a>
+{% endblock %}
 
+{% block container %}
 
 <article>
-  <p>
-    Games Completed: {{ count_games_finished }}/{{ games | length }}
-  </p>
+  {# Games Finished #}
+
+  <div class="stats">
+    <div class="stats-grid">
+      {% for name, count in stats %}
+      <div class="stat">
+        <span>{{ name }}</span>
+        <span class="number">{{ "{:03}".format(count) }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <svg 
+      width="250" 
+      height="250" 
+      viewBox="0 0 250 250"
+      class="circular-progress"
+      style="--progress: {{ count_games_finished / games|length * 100 }};">
+      <circle class="bg"></circle>
+      <circle class="fg"></circle>
+      <text x="50%" y="50%" text-anchor="middle" class="progress-text">
+        <tspan x="50%" dy="0">Games Completed</tspan>
+          <tspan x="50%" dy="1.2em">{{ count_games_finished }} / {{games | length }}</tspan>
+      </text>
+    </svg>
+  </div>
 </article>
 
 <article class="filter-container">
@@ -32,7 +59,7 @@ Backlog
 </article>
 
 <dialog id="details-dialog">
-    <article id="dialog-content" class="container-fluid modal">
+    <article class="dialog-content" id="dialog-content" class="container-fluid modal">
     </article>
 </dialog>
 
@@ -43,6 +70,13 @@ Backlog
   const games = {{ games | tojson }}
 </script>
 
+<script type="text/javascript">
+  const gameStatuses = [
+    {% for state in game_statuses %}
+      "{{ state }}",
+    {% endfor %}
+  ];
+</script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/backlog.js') }}"></script>
 
 {% endblock %}

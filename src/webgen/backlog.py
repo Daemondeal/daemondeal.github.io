@@ -40,15 +40,27 @@ def generate_backlog(generator: Generator):
 
     games = sorted(game_file["games"], key=lambda x: x["title"])
 
+    stats = []
+
+    for status in game_file["statuses"]:
+        count = sum(
+            [1 if game["status"] == status else 0 for game in game_file["games"]]
+        )
+        stats.append((status, count))
+
     count_games_finished = sum(
         [1 if game["status"] == "Finished" else 0 for game in game_file["games"]]
     )
+
+    game_statuses = game_file["statuses"]
 
     with open(path_backlog / "index.html", "w") as outfile:
         template = generator.env.get_template("backlog.html")
         outfile.write(
             template.render(
+                stats=stats,
                 count_games_finished=count_games_finished,
                 games=games,
+                game_statuses=game_statuses,
             )
         )

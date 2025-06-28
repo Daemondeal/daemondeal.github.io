@@ -160,7 +160,7 @@ function populateDialog(id) {
       <img
         src="${getCoverImgUrl(game['img_id'])}"
         alt="${game['title']} cover"
-        style="width: 100%; border-radius: 0.25rem;">
+        class="dialog-cover-img">
 
       <div>
         <p>

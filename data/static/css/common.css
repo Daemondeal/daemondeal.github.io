@@ -24,15 +24,21 @@
     height: 1em;
 }
 
-
-/* .theme-toggler a.theme-toggle--toggled { */
-/*     color: #FFF; */
-/* } */
-
 .top-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.title h2 {
+  margin: auto;
+  font-size: 1.5rem;
 }
 
 .title a {
@@ -47,14 +53,26 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+    justify-content: center;
+}
+
+.game-card:last-child:nth-child(odd):only-child {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .game-card {
     position: relative;
     display: inline-block;
-    height: 12em;
+    height: 11em;
     overflow: hidden;
     cursor: pointer;
+}
+
+@media (min-width: 1536px) {
+  .game-card {
+    height: 12em;
+  }
 }
 
 .game-card img {
@@ -152,26 +170,115 @@
   color: #ffe066;
 }
 
-.filter-container {
-  display: flex;
-  gap: 1em;
-  height: 5em;
-  justify-content: space-between;
-}
 
-.filter-options {
-  display: flex;
-  gap: 1em;
-  height: 100%;
-}
+@media (min-width: 1124px) {
+  .filter-container {
+    display: flex;
+    gap: 1em;
+    height: 5em;
+    justify-content: space-between;
+  }
 
-.filter-container input, .filter-container select {
-  width: 12em;
-  height: 100%;
+  .filter-options {
+    display: flex;
+    gap: 1em;
+    height: 100%;
+  }
+
+  .filter-container input, .filter-container select {
+    width: 12em;
+    height: 100%;
+  }
 }
 
 .filter-update {
   align-self: end;
   display: block;
   height: 3em;
+}
+
+.dialog-cover-img {
+  border-radius: 0.25em;
+}
+
+@media (min-width: 1124px) {
+  .dialog-content {
+    max-width: 775px;
+  }
+}
+
+/* Progress bar */
+
+.circular-progress {
+  --size: 250px;
+  --half-size: calc(var(--size) / 2);
+  --stroke-width: 20px;
+  --stroke-width-inside: 22px;
+  --radius: calc((var(--size) - var(--stroke-width)) / 2);
+  --circumference: calc(var(--radius) * pi * 2);
+  --dash: calc((var(--progress) * var(--circumference)) / 100);
+
+  --color: var(--pico-primary-hover-background);
+
+  width: 12rem;
+}
+
+.circular-progress circle {
+  cx: var(--half-size);
+  cy: var(--half-size);
+  r: var(--radius);
+  stroke-width: var(--stroke-width);
+  fill: none;
+  stroke-linecap: round;
+}
+
+.circular-progress text {
+  font-size: 1.2rem;
+}
+
+.circular-progress circle.bg {
+  stroke: #ddd;
+}
+
+.circular-progress circle.fg {
+  transform: rotate(-90deg);
+  transform-origin: var(--half-size) var(--half-size);
+  stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+  stroke: var(--color);
+  stroke-width: var(--stroke-width-inside);
+}
+
+@media (max-width: 1000px) {
+  .circular-progress {
+    display: none;
+  }
+
+  .stats-grid {
+    margin: auto;
+  }
+}
+
+.stats {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1000px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px 40px;
+  text-align: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.stat .number {
+  font-size: 2rem;
 }
