@@ -14,7 +14,7 @@ function getStatusClass(status) {
       return "status-dropped";
     case "Backlog":
       return "status-backlog";
-    case "Unreleased":
+    case "Wishlist":
       return "status-unreleased";
     case "Finished":
       return "status-finished";
@@ -25,10 +25,10 @@ function getStatusClass(status) {
 
 function getSortedNameList(parameter, grouped) {
   if (parameter === "status") {
-    let values = ["Playing", "Left Unfinished", "Backlog", "Finished", "Dropped"];
-    for (let v in []) {
+    let values = [];
+    for (let v of gameStatuses) {
       if (grouped.hasOwnProperty(v) && grouped[v].length > 0) {
-        values.append(v);
+        values.push(v);
       }
     }
     return values;
@@ -179,10 +179,6 @@ function populateDialog(id) {
 
         <p>
           <strong>Rating:</strong> ${game["rating"]}/4
-        </p>
-
-        <p>
-          <strong>Owned: </strong> ${game["owned"] ? "yes" : "no"}
         </p>
 
         ${notes}

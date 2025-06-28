@@ -1,4 +1,4 @@
-statuses = [ "Playing", "Left Unfinished", "Dropped", "Backlog", "Unreleased", "Finished",]
+statuses = [ "Playing", "Left Unfinished", "Backlog", "Wishlist", "Finished", "Dropped",]
 hidden = [ 130971, 195775,]
 [[games]]
 id = "205229"
@@ -11,7 +11,6 @@ status = "Finished"
 platform = "Switch"
 rating = "3"
 hours = "41"
-owned = true
 notes = ""
 
 [[games]]
@@ -25,7 +24,6 @@ platform = "Switch"
 sort_name = "Dragon Quest 02"
 rating = "2"
 hours = "15"
-owned = true
 notes = ""
 
 [[games]]
@@ -39,7 +37,6 @@ platform = "Switch"
 sort_name = "Dragon Quest 03"
 rating = "0"
 hours = "41"
-owned = true
 notes = ""
 
 [[games]]
@@ -53,7 +50,6 @@ sort_name = "Trails 06"
 platform = "PC"
 hours = "60"
 rating = "3"
-owned = true
 notes = ""
 
 [[games]]
@@ -67,7 +63,6 @@ status = "Finished"
 platform = "PC"
 rating = "3"
 hours = "47"
-owned = true
 notes = ""
 
 [[games]]
@@ -81,7 +76,6 @@ status = "Finished"
 platform = "PC"
 rating = "3"
 hours = "62"
-owned = true
 notes = ""
 
 [[games]]
@@ -95,7 +89,6 @@ status = "Finished"
 rating = "3"
 platform = "PC"
 hours = "64"
-owned = true
 notes = ""
 
 [[games]]
@@ -109,7 +102,6 @@ rating = "4"
 platform = "PC"
 hours = "40"
 sort_name = "Trails 01"
-owned = true
 notes = ""
 
 [[games]]
@@ -123,7 +115,6 @@ status = "Finished"
 platform = "PC"
 hours = "50"
 sort_name = "Trails 02"
-owned = true
 notes = ""
 
 [[games]]
@@ -137,7 +128,6 @@ status = "Finished"
 platform = "Switch"
 hours = "30"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -151,7 +141,6 @@ status = "Finished"
 platform = "PC"
 hours = "23"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -165,7 +154,6 @@ status = "Finished"
 platform = "PC"
 hours = "27"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -175,11 +163,10 @@ title = "No Sleep for Kaname Date: From AI - The Somnium Files"
 genre = "VN"
 series = "AITSM"
 rating = "0"
-status = "Unreleased"
+status = "Wishlist"
 platform = "PC"
 hours = "0"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -193,7 +180,6 @@ status = "Finished"
 platform = "PC"
 hours = "10"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -207,7 +193,6 @@ status = "Finished"
 platform = "PC"
 hours = "15"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -221,7 +206,6 @@ status = "Finished"
 platform = "PC"
 hours = "3"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -235,7 +219,6 @@ status = "Finished"
 platform = "PS3"
 hours = "16"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -249,7 +232,6 @@ status = "Finished"
 platform = "PC"
 hours = "38"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -263,7 +245,6 @@ status = "Finished"
 platform = "PC"
 hours = "6"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -277,7 +258,6 @@ status = "Finished"
 platform = "PC"
 hours = "12"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -291,7 +271,6 @@ status = "Finished"
 platform = "3DS"
 hours = "50"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -305,7 +284,6 @@ status = "Finished"
 platform = "3DS"
 hours = "55"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -319,7 +297,6 @@ status = "Finished"
 platform = "PC"
 hours = "24"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -333,7 +310,6 @@ status = "Finished"
 platform = "PC"
 hours = "35"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -343,11 +319,10 @@ title = "CrossCode: A New Home"
 genre = "JRPG"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "Switch"
 hours = "10"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -361,7 +336,6 @@ status = "Finished"
 platform = "Switch"
 hours = "36"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -375,7 +349,6 @@ status = "Playing"
 platform = "PC"
 hours = "11"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -389,7 +362,6 @@ status = "Finished"
 platform = "PC"
 hours = "11"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -403,7 +375,6 @@ status = "Finished"
 platform = "PC"
 hours = "25"
 sort_name = "Danganronpa 1"
-owned = true
 notes = ""
 
 [[games]]
@@ -417,7 +388,6 @@ status = "Finished"
 platform = "PC"
 hours = "33"
 sort_name = "Danganronpa 2"
-owned = true
 notes = ""
 
 [[games]]
@@ -431,7 +401,6 @@ status = "Finished"
 platform = "PC"
 hours = "40"
 sort_name = "Danganronpa 3"
-owned = true
 notes = ""
 
 [[games]]
@@ -445,7 +414,6 @@ status = "Finished"
 platform = "PC"
 hours = "17"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -459,7 +427,6 @@ status = "Finished"
 platform = "PC"
 hours = "30"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -473,7 +440,6 @@ status = "Finished"
 platform = "PC"
 hours = "36"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -487,7 +453,6 @@ status = "Finished"
 platform = "PC"
 hours = "36"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -501,7 +466,6 @@ status = "Finished"
 platform = "PC"
 hours = "12"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -515,7 +479,6 @@ status = "Finished"
 platform = "PC"
 hours = "6"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -529,7 +492,6 @@ status = "Finished"
 platform = "PC"
 hours = "50"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -543,7 +505,6 @@ status = "Finished"
 platform = "NDS"
 hours = "27"
 sort_name = "Dragon Quest 04"
-owned = true
 notes = ""
 
 [[games]]
@@ -557,7 +518,6 @@ status = "Finished"
 platform = "NDS"
 hours = "30"
 sort_name = "Dragon Quest 05"
-owned = true
 notes = ""
 
 [[games]]
@@ -571,7 +531,6 @@ status = "Finished"
 platform = "NDS"
 hours = "40"
 sort_name = "Dragon Quest 06"
-owned = true
 notes = ""
 
 [[games]]
@@ -585,7 +544,6 @@ status = "Finished"
 platform = "3DS"
 hours = "80"
 sort_name = "Dragon Quest 07"
-owned = true
 notes = ""
 
 [[games]]
@@ -599,7 +557,6 @@ status = "Finished"
 platform = "NDS"
 hours = "48"
 sort_name = "Dragon Quest 09"
-owned = true
 notes = ""
 
 [[games]]
@@ -613,7 +570,6 @@ status = "Finished"
 platform = "NDS"
 hours = "12"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -627,7 +583,6 @@ status = "Finished"
 platform = "PC"
 hours = "25"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -641,7 +596,6 @@ status = "Finished"
 platform = "Switch"
 hours = "40"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -655,7 +609,6 @@ status = "Finished"
 platform = "NDS"
 hours = "23"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -669,7 +622,6 @@ status = "Finished"
 platform = "PS2"
 hours = "20"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -683,7 +635,6 @@ status = "Finished"
 platform = "PC"
 hours = "200"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -697,7 +648,6 @@ status = "Finished"
 platform = "PC"
 hours = "27"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -711,7 +661,6 @@ status = "Finished"
 platform = "PC"
 hours = "4"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -725,7 +674,6 @@ status = "Finished"
 platform = "PC"
 hours = "16"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -739,7 +687,6 @@ status = "Finished"
 platform = "NDS"
 hours = "21"
 sort_name = "Final Fantasy 4"
-owned = true
 notes = ""
 
 [[games]]
@@ -753,7 +700,6 @@ status = "Finished"
 platform = "PC"
 hours = "32"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -767,7 +713,6 @@ status = "Finished"
 platform = "PC"
 hours = "34"
 sort_name = "Final Fantasy 6"
-owned = true
 notes = ""
 
 [[games]]
@@ -781,7 +726,6 @@ status = "Finished"
 platform = "NDS"
 hours = "27"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -795,7 +739,6 @@ status = "Finished"
 platform = "PC"
 hours = "7"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -809,7 +752,6 @@ status = "Finished"
 platform = "PC"
 hours = "7"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -823,7 +765,6 @@ status = "Finished"
 platform = "PC"
 hours = "88"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -837,7 +778,6 @@ status = "Finished"
 platform = "PC"
 hours = "30"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -851,7 +791,6 @@ status = "Finished"
 platform = "PC"
 hours = "15"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -865,7 +804,6 @@ status = "Finished"
 platform = "PC"
 hours = "18"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -879,7 +817,6 @@ status = "Finished"
 platform = "NDS"
 hours = "26"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -893,7 +830,6 @@ status = "Finished"
 platform = "PC"
 hours = "13"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -907,7 +843,6 @@ status = "Finished"
 platform = "PC"
 hours = "10"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -921,7 +856,6 @@ status = "Finished"
 platform = "3DS"
 hours = "20"
 sort_name = "Mario & Luigi 1"
-owned = true
 notes = ""
 
 [[games]]
@@ -935,7 +869,6 @@ status = "Finished"
 platform = "NDS"
 hours = "18"
 sort_name = "Mario & Luigi 2"
-owned = true
 notes = ""
 
 [[games]]
@@ -949,7 +882,6 @@ status = "Finished"
 platform = "NDS"
 hours = "22"
 sort_name = "Mario & Luigi 3"
-owned = true
 notes = ""
 
 [[games]]
@@ -963,7 +895,6 @@ status = "Finished"
 platform = "3DS"
 hours = "40"
 sort_name = "Mario & Luigi 4"
-owned = true
 notes = ""
 
 [[games]]
@@ -977,7 +908,6 @@ status = "Finished"
 platform = "PC"
 hours = "17"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -991,7 +921,6 @@ status = "Finished"
 platform = "PC"
 hours = "24"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1005,7 +934,6 @@ status = "Finished"
 platform = "PC"
 hours = "24"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1019,7 +947,6 @@ status = "Finished"
 platform = "PC"
 hours = "3"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1033,7 +960,6 @@ status = "Finished"
 platform = "PC"
 hours = "64"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1047,7 +973,6 @@ status = "Finished"
 platform = "PS3"
 hours = "20"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1061,7 +986,6 @@ status = "Finished"
 platform = "PC"
 hours = "10"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1075,7 +999,6 @@ status = "Finished"
 platform = "PC"
 hours = "10"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1089,7 +1012,6 @@ status = "Finished"
 platform = "PC"
 hours = "30"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1103,7 +1025,6 @@ status = "Finished"
 platform = "PC"
 hours = "30"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1117,7 +1038,6 @@ status = "Finished"
 platform = "PC"
 hours = "12"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1131,7 +1051,6 @@ status = "Finished"
 platform = "Switch"
 hours = "12"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1145,7 +1064,6 @@ status = "Finished"
 platform = "PC"
 hours = "3"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1159,7 +1077,6 @@ status = "Finished"
 platform = "PC"
 hours = "3"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1173,7 +1090,6 @@ status = "Finished"
 platform = "Switch"
 hours = "100"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1187,7 +1103,6 @@ status = "Finished"
 platform = "NDS"
 hours = "18"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1201,7 +1116,6 @@ status = "Finished"
 platform = "NDS"
 hours = "18"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1215,7 +1129,6 @@ status = "Finished"
 platform = "NDS"
 hours = "21"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1229,7 +1142,6 @@ status = "Finished"
 platform = "3DS"
 hours = "25"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1243,7 +1155,6 @@ status = "Finished"
 platform = "NDS"
 hours = "32"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1257,7 +1168,6 @@ status = "Finished"
 platform = "NDS"
 hours = "32"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1271,7 +1181,6 @@ status = "Finished"
 platform = "NDS"
 hours = "41"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1285,7 +1194,6 @@ status = "Finished"
 platform = "GBA"
 hours = "31"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -1299,7 +1207,6 @@ status = "Finished"
 platform = "NDS"
 hours = "37"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1313,7 +1220,6 @@ status = "Finished"
 platform = "Switch"
 hours = "50"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1327,7 +1233,6 @@ status = "Finished"
 platform = "GBA"
 hours = "24"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1341,7 +1246,6 @@ status = "Finished"
 platform = "NDS"
 hours = "24"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1355,7 +1259,6 @@ status = "Finished"
 platform = "NDS"
 hours = "22"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1369,7 +1272,6 @@ status = "Finished"
 platform = "NDS"
 hours = "25"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1383,7 +1285,6 @@ status = "Finished"
 platform = "NDS"
 hours = "11"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1397,7 +1298,6 @@ status = "Finished"
 platform = "NDS"
 hours = "20"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1411,7 +1311,6 @@ status = "Finished"
 platform = "NDS"
 hours = "20"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1425,7 +1324,6 @@ status = "Finished"
 platform = "3DS"
 hours = "23"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1439,7 +1337,6 @@ status = "Finished"
 platform = "Switch"
 hours = "25"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1453,7 +1350,6 @@ status = "Finished"
 platform = "3DS"
 hours = "33"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1467,7 +1363,6 @@ status = "Finished"
 platform = "3DS"
 hours = "30"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1481,7 +1376,6 @@ status = "Finished"
 platform = "PC"
 hours = "8"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1495,7 +1389,6 @@ status = "Finished"
 platform = "PS2"
 hours = "10"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1509,7 +1402,6 @@ status = "Finished"
 platform = "PS2"
 hours = "10"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1523,7 +1415,6 @@ status = "Finished"
 platform = "PC"
 hours = "10"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1537,7 +1428,6 @@ status = "Finished"
 platform = "PC"
 hours = "12"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1551,7 +1441,6 @@ status = "Finished"
 platform = "Switch"
 hours = "25"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -1565,7 +1454,6 @@ status = "Finished"
 platform = "PC"
 hours = "28"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1579,7 +1467,6 @@ status = "Finished"
 platform = "PC"
 hours = "26"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1593,7 +1480,6 @@ status = "Finished"
 platform = "PC"
 hours = "26"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1607,7 +1493,6 @@ status = "Finished"
 platform = "PC"
 hours = "27"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1621,7 +1506,6 @@ status = "Finished"
 platform = "PC"
 hours = "15"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1635,7 +1519,6 @@ status = "Finished"
 platform = "PC"
 hours = "40"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1649,7 +1532,6 @@ status = "Finished"
 platform = "PC"
 hours = "12"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1663,7 +1545,6 @@ status = "Finished"
 platform = "PC"
 hours = "12"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1677,7 +1558,6 @@ status = "Finished"
 platform = "NDS"
 hours = "16"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1691,7 +1571,6 @@ status = "Finished"
 platform = "PC"
 hours = "25"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1705,7 +1584,6 @@ status = "Finished"
 platform = "PC"
 hours = "35"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1719,7 +1597,6 @@ status = "Finished"
 platform = "PC"
 hours = "28"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1733,7 +1610,6 @@ status = "Finished"
 platform = "PC"
 hours = "40"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1747,7 +1623,6 @@ status = "Finished"
 platform = "PC"
 hours = "44"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1761,7 +1636,6 @@ status = "Finished"
 platform = "PC"
 hours = "42"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1775,7 +1649,6 @@ status = "Finished"
 platform = "PC"
 hours = "100"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1789,7 +1662,6 @@ status = "Finished"
 platform = "PC"
 hours = "26"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1803,7 +1675,6 @@ status = "Finished"
 platform = "Switch"
 hours = "64"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1817,7 +1688,6 @@ status = "Finished"
 platform = "PC"
 hours = "33"
 sort_name = "Trails 03"
-owned = true
 notes = ""
 
 [[games]]
@@ -1831,7 +1701,6 @@ status = "Finished"
 platform = "PC"
 hours = "39"
 sort_name = "Trails 04"
-owned = true
 notes = ""
 
 [[games]]
@@ -1845,7 +1714,6 @@ status = "Finished"
 platform = "PC"
 hours = "45"
 sort_name = "Trails 05"
-owned = true
 notes = ""
 
 [[games]]
@@ -1859,7 +1727,6 @@ status = "Finished"
 platform = "PC"
 hours = "42"
 sort_name = "Trails 10"
-owned = true
 notes = ""
 
 [[games]]
@@ -1873,7 +1740,6 @@ status = "Finished"
 platform = "PC"
 hours = "52"
 sort_name = "Trails 11"
-owned = true
 notes = ""
 
 [[games]]
@@ -1887,7 +1753,6 @@ status = "Finished"
 platform = "PC"
 hours = "48"
 sort_name = "Trails 12"
-owned = true
 notes = ""
 
 [[games]]
@@ -1901,7 +1766,6 @@ status = "Finished"
 platform = "PC"
 hours = "4"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1915,7 +1779,6 @@ status = "Finished"
 platform = "PC"
 hours = "50"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1929,7 +1792,6 @@ status = "Finished"
 platform = "PC"
 hours = "64"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1943,7 +1805,6 @@ status = "Finished"
 platform = "PC"
 hours = "20"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1957,7 +1818,6 @@ status = "Finished"
 platform = "PC"
 hours = "25"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1971,7 +1831,6 @@ status = "Finished"
 platform = "Switch"
 hours = "52"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -1985,7 +1844,6 @@ status = "Finished"
 platform = "PC"
 hours = "13"
 sort_name = "Ys 01"
-owned = true
 notes = ""
 
 [[games]]
@@ -1999,7 +1857,6 @@ status = "Finished"
 platform = "PC"
 hours = "23"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2013,7 +1870,6 @@ status = "Finished"
 platform = "PC"
 hours = "17"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2027,7 +1883,6 @@ status = "Finished"
 platform = "PC"
 hours = "35"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2041,7 +1896,6 @@ status = "Dropped"
 platform = "PC"
 hours = "20"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2055,7 +1909,6 @@ status = "Finished"
 platform = "Switch"
 hours = "50"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2069,7 +1922,6 @@ status = "Dropped"
 platform = "PC"
 hours = "0"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2083,7 +1935,6 @@ status = "Dropped"
 platform = "PC"
 hours = "0"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2097,7 +1948,6 @@ status = "Dropped"
 platform = "PC"
 hours = "6"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2111,7 +1961,6 @@ status = "Dropped"
 platform = "PC"
 hours = "0"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2125,7 +1974,6 @@ status = "Playing"
 platform = "Switch"
 hours = "55"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2139,7 +1987,6 @@ status = "Backlog"
 platform = "Switch"
 hours = "45"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2149,11 +1996,10 @@ title = "Metal Gear Rising: Revengeance"
 genre = "Action"
 series = "Metal Gear Solid"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "12"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2163,11 +2009,10 @@ title = "Mouthwashing"
 genre = "Unknown"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "Switch"
 hours = "3"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2177,11 +2022,10 @@ title = "Clair Obscur: Expedition 33"
 genre = "JRPG"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "42"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2195,7 +2039,6 @@ status = "Left Unfinished"
 platform = "Switch"
 hours = "9"
 sort_name = ""
-owned = true
 notes = "Got softlocked in switch"
 
 [[games]]
@@ -2209,7 +2052,6 @@ status = "Left Unfinished"
 platform = "PC"
 hours = "23"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2223,7 +2065,6 @@ status = "Left Unfinished"
 platform = "3DS"
 hours = "61"
 sort_name = "Dragon Quest 08"
-owned = true
 notes = ""
 
 [[games]]
@@ -2237,7 +2078,6 @@ status = "Left Unfinished"
 platform = "3DS"
 hours = "30"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2251,7 +2091,6 @@ status = "Left Unfinished"
 platform = "3DS"
 hours = "25"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2265,7 +2104,6 @@ status = "Left Unfinished"
 platform = "Switch"
 hours = "13"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2279,7 +2117,6 @@ status = "Left Unfinished"
 platform = "Switch"
 hours = "50"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2293,7 +2130,6 @@ status = "Left Unfinished"
 platform = "Switch"
 hours = "50"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2307,7 +2143,6 @@ status = "Left Unfinished"
 platform = "PC"
 hours = "22"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2321,7 +2156,6 @@ status = "Left Unfinished"
 platform = "PC"
 hours = "89"
 sort_name = "Dragon Quest 11"
-owned = false
 notes = "Never finished Act 3"
 
 [[games]]
@@ -2335,7 +2169,6 @@ status = "Left Unfinished"
 platform = "PC"
 hours = "6"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2349,7 +2182,6 @@ status = "Left Unfinished"
 platform = "PC"
 hours = "64"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2363,7 +2195,6 @@ status = "Left Unfinished"
 platform = "PS2"
 hours = "46"
 sort_name = "Final Fantasy 10"
-owned = true
 notes = ""
 
 [[games]]
@@ -2377,7 +2208,6 @@ status = "Backlog"
 platform = "PC"
 hours = "21"
 sort_name = "Ys 04"
-owned = true
 notes = ""
 
 [[games]]
@@ -2391,7 +2221,6 @@ status = "Backlog"
 platform = "Switch"
 hours = "15"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2405,7 +2234,6 @@ status = "Backlog"
 platform = "Switch"
 hours = "50"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2415,11 +2243,10 @@ title = "The World Ends with You"
 genre = "JRPG"
 series = "TWEWY"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "NDS"
 hours = "40"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2433,7 +2260,6 @@ status = "Backlog"
 platform = "Switch"
 hours = "40"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2447,7 +2273,6 @@ status = "Backlog"
 platform = "Switch"
 hours = "11"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2461,7 +2286,6 @@ status = "Backlog"
 platform = "PC"
 hours = "12"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2475,7 +2299,6 @@ status = "Backlog"
 platform = "PC"
 hours = "30"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2489,7 +2312,6 @@ status = "Backlog"
 platform = "PC"
 hours = "30"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2503,7 +2325,6 @@ status = "Backlog"
 platform = "PC"
 hours = "40"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2517,7 +2338,6 @@ status = "Backlog"
 platform = "PC"
 hours = "38"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2531,7 +2351,6 @@ status = "Backlog"
 platform = "PC"
 hours = "95"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2541,11 +2360,10 @@ title = "Exapunks"
 genre = "Puzzle"
 series = "Zachtronics"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "26"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2559,7 +2377,6 @@ status = "Backlog"
 platform = "PC"
 hours = "8"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2573,7 +2390,6 @@ status = "Backlog"
 platform = "PC"
 hours = "15"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2587,7 +2403,6 @@ status = "Backlog"
 platform = "PC"
 hours = "5"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2601,7 +2416,6 @@ status = "Backlog"
 platform = "PC"
 hours = "9"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2615,7 +2429,6 @@ status = "Backlog"
 platform = "PC"
 hours = "10"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2629,7 +2442,6 @@ status = "Backlog"
 platform = "PC"
 hours = "15"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2639,11 +2451,10 @@ title = "Prince of Persia: The Forgotten Sands"
 genre = "Action"
 series = "Prince of Persia"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "8"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2657,7 +2468,6 @@ status = "Playing"
 platform = "Switch"
 hours = "20"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2671,7 +2481,6 @@ status = "Backlog"
 platform = "PC"
 hours = "14"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2685,7 +2494,6 @@ status = "Backlog"
 platform = "PC"
 hours = "28"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2699,7 +2507,6 @@ status = "Backlog"
 platform = "PC"
 hours = "28"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2713,7 +2520,6 @@ status = "Backlog"
 platform = "PC"
 hours = "29"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2723,11 +2529,10 @@ title = "The Sekimeiya: Spun Glass"
 genre = "VN"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "42"
 sort_name = ""
-owned = false
 notes = "More of a puzzle than a VN as it seems"
 
 [[games]]
@@ -2737,11 +2542,10 @@ title = "Tunic"
 genre = "Adventure"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "16"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2751,11 +2555,10 @@ title = "Yakuza: Like a Dragon"
 genre = "JRPG"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "31"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2769,7 +2572,6 @@ status = "Backlog"
 platform = "PC"
 hours = "35"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2783,7 +2585,6 @@ status = "Backlog"
 platform = "PC"
 hours = "44"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2797,7 +2598,6 @@ status = "Backlog"
 platform = "PC"
 hours = "24"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2811,7 +2611,6 @@ status = "Backlog"
 platform = "PC"
 hours = "51"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2825,7 +2624,6 @@ status = "Backlog"
 platform = "PC"
 hours = "8"
 sort_name = ""
-owned = true
 notes = ""
 
 [[games]]
@@ -2839,7 +2637,6 @@ status = "Backlog"
 platform = "PC"
 hours = "11"
 sort_name = "Ys 03"
-owned = true
 notes = "Play Order - 5"
 
 [[games]]
@@ -2853,7 +2650,6 @@ status = "Backlog"
 platform = "PC"
 hours = "13"
 sort_name = "Ys 06"
-owned = true
 notes = "Play Order - 6"
 
 [[games]]
@@ -2863,11 +2659,10 @@ title = "Paper Mario"
 genre = "JRPG"
 series = "Paper Mario"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "N64"
 hours = "23"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2877,11 +2672,10 @@ title = "Shin Megami Tensei IV"
 genre = "JRPG"
 series = "Shin Megami Tensei"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "3DS"
 hours = "43"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2891,11 +2685,10 @@ title = "Wario: Master of Disguise"
 genre = "Platformer"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "NDS"
 hours = "9"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2905,11 +2698,10 @@ title = "Paper Mario: The Thousand-Year Door"
 genre = "JRPG"
 series = "Paper Mario"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "Switch"
 hours = "30"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2919,11 +2711,10 @@ title = "Armored Core VI: Fires of Rubicon"
 genre = "Action"
 series = "Armored Core"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "20"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2933,11 +2724,10 @@ title = "Baldur's Gate 3"
 genre = "ORPG"
 series = "Baldur's Gate"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "62"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2947,11 +2737,10 @@ title = "Bleak Faith: Forsaken"
 genre = "Action"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "20"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2961,11 +2750,10 @@ title = "Chrono Ark"
 genre = "Roguelike"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "33"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2975,11 +2763,10 @@ title = "Devil May Cry 5"
 genre = "Action"
 series = "Devil May Cry"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "17"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -2989,11 +2776,10 @@ title = "Dragon Age: The Veilguard"
 genre = "ORPG"
 series = "Dragon Age"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "30"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3003,11 +2789,10 @@ title = "Elex II"
 genre = "ORPG"
 series = "ELEX"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "35"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3017,11 +2802,10 @@ title = "Ghost Trick: Phantom Detective"
 genre = "VN"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "12"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3031,11 +2815,10 @@ title = "Gnosia"
 genre = "VN"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "18"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3045,11 +2828,10 @@ title = "I Was a Teenage Exocolonist"
 genre = "VN"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "11"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3059,11 +2841,10 @@ title = "In Stars and Time"
 genre = "JRPG"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "18"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3073,11 +2854,10 @@ title = "Last Call BBS"
 genre = "Puzzle"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "18"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3087,11 +2867,10 @@ title = "Nine Sols"
 genre = "Metroidvania"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "Switch"
 hours = "21"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3101,11 +2880,10 @@ title = "Outer Wilds"
 genre = "Unknown"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "16"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3115,11 +2893,10 @@ title = "Persona 3 Reload"
 genre = "JRPG"
 series = "Persona"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "68"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3129,11 +2906,10 @@ title = "Persona 4 Golden"
 genre = "JRPG"
 series = "Persona"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "68"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3143,11 +2919,10 @@ title = "Ys X: Nordics"
 genre = "ARPG"
 series = "Ys"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "24"
 sort_name = "Ys 10"
-owned = false
 notes = ""
 
 [[games]]
@@ -3157,11 +2932,10 @@ title = "Ys Seven"
 genre = "ARPG"
 series = "Ys"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "22"
 sort_name = "Ys 07"
-owned = false
 notes = ""
 
 [[games]]
@@ -3171,11 +2945,10 @@ title = "Ys VIII: Lacrimosa of Dana"
 genre = "ARPG"
 series = "Ys"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "37"
 sort_name = "Ys 08"
-owned = false
 notes = ""
 
 [[games]]
@@ -3185,11 +2958,10 @@ title = "Ys IX: Monstrum Nox"
 genre = "ARPG"
 series = "Ys"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "27"
 sort_name = "Ys 09"
-owned = false
 notes = ""
 
 [[games]]
@@ -3199,11 +2971,10 @@ title = "Never7: The End of Infinity"
 genre = "VN"
 series = "Infinity"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "25"
 sort_name = "Infinity 1"
-owned = false
 notes = ""
 
 [[games]]
@@ -3213,11 +2984,10 @@ title = "Ever17"
 genre = "VN"
 series = "Infinity"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "35"
 sort_name = "Infinity 2"
-owned = false
 notes = ""
 
 [[games]]
@@ -3227,11 +2997,10 @@ title = "Remember11: The Age of Infinity"
 genre = "VN"
 series = "Infinity"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "25"
 sort_name = "Infinity 3"
-owned = false
 notes = ""
 
 [[games]]
@@ -3241,11 +3010,10 @@ title = "Master Detective Archives: Rain Code"
 genre = "VN"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "Switch"
 hours = "31"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3255,11 +3023,10 @@ title = "Final Fantasy IX"
 genre = "JRPG"
 series = "Final Fantasy"
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "38"
 sort_name = "Final Fantasy 09"
-owned = false
 notes = ""
 
 [[games]]
@@ -3269,11 +3036,10 @@ title = "Starfield"
 genre = "ORPG"
 series = ""
 rating = "0"
-status = "Backlog"
+status = "Wishlist"
 platform = "PC"
 hours = "22"
 sort_name = ""
-owned = false
 notes = ""
 
 [[games]]
@@ -3283,10 +3049,9 @@ title = "The Legend of Heroes: Trails Beyond the Horizon"
 genre = "JRPG"
 series = "Trails"
 rating = "0"
-status = "Unreleased"
+status = "Wishlist"
 platform = "PC"
 hours = "50"
 sort_name = "Trails 13"
-owned = false
 notes = ""
 

@@ -116,7 +116,6 @@ def route_add_game():
         "platform": request.form["platform"],
         "hours": request.form["hours"],
         "sort_name": request.form["sort_name"],
-        "owned": "owned" in request.form,
         "notes": request.form["notes"],
     }
 
