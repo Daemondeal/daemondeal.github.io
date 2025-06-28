@@ -33,9 +33,10 @@ Backlog
       style="--progress: {{ count_games_finished / games|length * 100 }};">
       <circle class="bg"></circle>
       <circle class="fg"></circle>
-      <text x="50%" y="50%" text-anchor="middle" class="progress-text">
-        <tspan x="50%" dy="0">Games Completed</tspan>
-          <tspan x="50%" dy="1.2em">{{ count_games_finished }} / {{games | length }}</tspan>
+      <text x="50%" y="40%" text-anchor="middle" class="progress-text">
+        <tspan x="50%" dy="0">Games</tspan>
+        <tspan x="50%" dy="1em">Completed</tspan>
+        <tspan x="50%" dy="2em">{{ count_games_finished }} / {{games | length }}</tspan>
       </text>
     </svg>
   </div>
