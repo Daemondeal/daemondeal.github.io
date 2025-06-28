@@ -32,6 +32,10 @@ function getDisplayTitle(parameter, name) {
     }
   }
 
+  if (!parameter)  {
+    return "Games";
+  }
+
   return name || "Uncategorized";
 }
 
