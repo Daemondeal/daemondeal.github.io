@@ -49,7 +49,10 @@ def generate_backlog(generator: Generator):
         stats.append((status, count))
 
     count_games_finished = sum(
-        [1 if game["status"] == "Finished" else 0 for game in game_file["games"]]
+        [
+            1 if game["status"] in ["Finished", "Dropped"] else 0
+            for game in game_file["games"]
+        ]
     )
 
     game_statuses = game_file["statuses"]
