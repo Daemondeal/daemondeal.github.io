@@ -72,11 +72,14 @@ function htmlToNode(html) {
     return template.content.firstChild;
 }
 
-function showBy(name, parameter) {
+function showBy(name, parameter, platform) {
   let grouped = {};
 
   for (let game of games) {
     if (name !== "" && !game["title"].match(name))
+      continue;
+
+    if (platform !== "" && game["platform"] !== platform)
       continue;
 
     let param = game[parameter];
@@ -212,8 +215,9 @@ function populateDialog(id) {
 function updateFilter() {
   const filterName = document.getElementById("filter-name").value;
   const filterGroupBy = document.getElementById("filter-group-by").value;
+  const filterPlatform = document.getElementById("filter-platform").value
 
-  showBy(filterName, filterGroupBy);
+  showBy(filterName, filterGroupBy, filterPlatform);
 }
 
 function openDialog(id) {
@@ -230,5 +234,5 @@ function closeDialog() {
   } }
 
 document.addEventListener("DOMContentLoaded", () => {
-  showBy("", "status");
+  showBy("", "status", "");
 })

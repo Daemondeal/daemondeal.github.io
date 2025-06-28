@@ -45,6 +45,15 @@ Backlog
 <article class="filter-container">
   <div class="filter-options">
     <input type="text" placeholder="Name" id="filter-name">
+    <select id="filter-platform">
+        <option selected disabled value="">
+          Platform
+        </option>
+        <option value="">Any</option>
+        {% for platform in platforms %}
+        <option value="{{ platform }}">{{ platform }}</option>
+        {% endfor %}
+    </select>
     <select id="filter-group-by">
         <option selected disabled value="">
           Group by
