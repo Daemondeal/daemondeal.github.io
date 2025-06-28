@@ -14,7 +14,7 @@ function getStatusClass(status) {
       return "status-dropped";
     case "Backlog":
       return "status-backlog";
-    case "Unreleased":
+    case "Wishlist":
       return "status-unreleased";
     case "Finished":
       return "status-finished";
@@ -23,19 +23,37 @@ function getStatusClass(status) {
   }
 }
 
+function getDisplayTitle(parameter, name) {
+  if (parameter == "rating") {
+    if (name == "0") {
+      return "Unrated";
+    } else {
+      return `${name}/4`;
+    }
+  }
+
+  return name || "Uncategorized";
+}
+
 function getSortedNameList(parameter, grouped) {
   if (parameter === "status") {
-    let values = ["Playing", "Left Unfinished", "Backlog", "Finished", "Dropped"];
-    for (let v in []) {
+    let values = [];
+    for (let v of gameStatuses) {
       if (grouped.hasOwnProperty(v) && grouped[v].length > 0) {
-        values.append(v);
+        values.push(v);
       }
     }
     return values;
+  } else if (parameter == "rating") {
+    return ["4", "3", "2", "1", "0"];
   }
 
   let groupNames = Object.keys(grouped);
   groupNames.sort();
+
+  if (groupNames[0] === "") {
+    groupNames.push(groupNames.shift());
+  }
   return groupNames;
 }
 
@@ -85,6 +103,9 @@ function showBy(name, parameter) {
   let groupNames = getSortedNameList(parameter, grouped);
 
   for (let groupName of groupNames) {
+    if (!grouped.hasOwnProperty(groupName)) {
+      continue;
+    }
     let groupContainer = document.createElement("article");
 
     let finished = 0;
@@ -100,7 +121,7 @@ function showBy(name, parameter) {
 
     }
 
-    const name = groupName || "Uncategorized";
+    const name = getDisplayTitle(parameter, groupName);
     groupContainer.appendChild(htmlToNode(
       `<h2>${name}${finishedString}</h2>`
     ));
@@ -160,7 +181,7 @@ function populateDialog(id) {
       <img
         src="${getCoverImgUrl(game['img_id'])}"
         alt="${game['title']} cover"
-        style="width: 100%; border-radius: 0.25rem;">
+        class="dialog-cover-img">
 
       <div>
         <p>
@@ -179,10 +200,6 @@ function populateDialog(id) {
 
         <p>
           <strong>Rating:</strong> ${game["rating"]}/4
-        </p>
-
-        <p>
-          <strong>Owned: </strong> ${game["owned"] ? "yes" : "no"}
         </p>
 
         ${notes}
