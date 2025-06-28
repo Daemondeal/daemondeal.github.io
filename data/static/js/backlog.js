@@ -23,6 +23,18 @@ function getStatusClass(status) {
   }
 }
 
+function getDisplayTitle(parameter, name) {
+  if (parameter == "rating") {
+    if (name == "0") {
+      return "Unrated";
+    } else {
+      return `${name}/4`;
+    }
+  }
+
+  return name || "Uncategorized";
+}
+
 function getSortedNameList(parameter, grouped) {
   if (parameter === "status") {
     let values = [];
@@ -32,10 +44,16 @@ function getSortedNameList(parameter, grouped) {
       }
     }
     return values;
+  } else if (parameter == "rating") {
+    return ["4", "3", "2", "1", "0"];
   }
 
   let groupNames = Object.keys(grouped);
   groupNames.sort();
+
+  if (groupNames[0] === "") {
+    groupNames.push(groupNames.shift());
+  }
   return groupNames;
 }
 
@@ -85,6 +103,9 @@ function showBy(name, parameter) {
   let groupNames = getSortedNameList(parameter, grouped);
 
   for (let groupName of groupNames) {
+    if (!grouped.hasOwnProperty(groupName)) {
+      continue;
+    }
     let groupContainer = document.createElement("article");
 
     let finished = 0;
@@ -100,7 +121,7 @@ function showBy(name, parameter) {
 
     }
 
-    const name = groupName || "Uncategorized";
+    const name = getDisplayTitle(parameter, groupName);
     groupContainer.appendChild(htmlToNode(
       `<h2>${name}${finishedString}</h2>`
     ));
