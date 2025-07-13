@@ -33,7 +33,7 @@ function getDisplayTitle(parameter, name) {
   }
 
   if (!parameter)  {
-    return "Results";
+    return "Games";
   }
 
   return name || "Uncategorized";
@@ -79,8 +79,10 @@ function htmlToNode(html) {
 function showBy(name, parameter, platform) {
   let grouped = {};
 
+  const searchQuery = new RegExp(name, "i"); 
+
   for (let game of games) {
-    if (name !== "" && !game["title"].match(name))
+    if (name !== "" && !game["title"].match(searchQuery))
       continue;
 
     if (platform !== "" && game["platform"] !== platform)
@@ -235,7 +237,16 @@ function closeDialog() {
   const dialog = document.getElementById('details-dialog');
   if (dialog.open) {
       dialog.close();
-  } }
+  } 
+}
+
+document.querySelectorAll(".filter-item").forEach((item) => {
+  item.addEventListener("keypress", (ev) => {
+    if (ev.key == "Enter") {
+      updateFilter()
+    }
+  });
+})
 
 document.addEventListener("DOMContentLoaded", () => {
   showBy("", "status", "");
