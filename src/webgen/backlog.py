@@ -43,7 +43,6 @@ def generate_backlog(generator: Generator):
     game_statuses = game_file["statuses"]
     statuses = {status: 0 for status in game_statuses}
     platforms = set()
-    print(statuses)
 
     for game in games:
         statuses[game["status"]] += 1
