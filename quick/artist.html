@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Topic Assigner</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    .name-container {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .name-card {
+      background: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .name-card button {
+      margin-top: 0.5rem;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    .modal-content {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 300px;
+    }
+    .close {
+      margin-top: 1rem;
+    }
+    input[type="text"] {
+      padding: 0.5rem;
+      font-size: 1rem;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Secret Topic Assigner</h1>
+
+  <div>
+    <input type="text" id="customWordInput" placeholder="Enter custom topic (optional)">
+    <button onclick="assignTopic()">🎲 Assign Topic</button>
+  </div>
+
+  <div class="name-container" id="nameContainer"></div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h2>Your Assignment</h2>
+      <p id="topicText"></p>
+      <button class="close" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const names = ["Player 1", "Player 2", "Player 3", "Player 4"];
+    const topics = [
+      "Cow", "Elephant", "Apple", "Banana", "Pizza", "Carrot", "Airplane", "Car", "Train", "Ship",
+      "House", "School", "Church", "Hospital", "Lion", "Chocolate", "Bread", "Bicycle", "Bus",
+      "Motorcycle", "Laptop", "Smartphone", "Camera", "Television", "Sun", "Moon", "Tree", "Flower",
+      "Tram", "Truck", "Helicopter", "Bed", "Table", "Lamp", "Camping", "Forehead", "Kneecap",
+      "Mustache", "Shoulder", "Stomach", "Dolphin", "Flamingo", "Giraffe", "Gorilla", "Hamster",
+      "Kangaroo", "Lizard", "Lobster", "Monkey", "Octopus", "Parrot", "Scorpion", "Seagull",
+      "Seahorse", "Squirrel", "Tortoise", "Asteroid", "Wormhole", "Pacifier", "Stroller",
+      "Lemonade", "Facebook", "Twitter", "Homework", "Laughing", "Birthday", "Election", "Coconut",
+      "Coffee", "Pancakes", "Popcorn", "Popsicle", "Pretzel", "Pumpkin", "Sandwich", "Sausage",
+      "America", "England", "Finland", "Germany", "Holland", "Jamaica", "New York", "Mountain",
+      "Volcano", "Artist", "Butcher", "Captain", "Cashier", "Dentist", "Doctor", "Farmer",
+      "Gardener", "Mailman", "Painter", "Soldier", "Surgeon", "Teacher", "Waitress", "Archery",
+      "Bowling", "Boxing", "Fencing", "Fishing", "Football", "Long Jump", "Mini Golf", "Olympics",
+      "Swimming", "Chainsaw", "Crowbar", "Dustpan", "Scissors", "Tweezers", "Swingset", "Forklift",
+      "Sailboat", "Tow Truck", "Tractor", "Blizzard", "Tornado", "Hiking", "Dancing", "Reading",
+      "Climbing", "Building Blocks", "Stuffed Animals", "Rain", "Sunshine", "Snow", "Wind", "Fog",
+      "Piano", "Guitar", "Trumpet", "Violin", "Drums", "Flute", "Saxophone", "Harp", "Accordion",
+      "Harmonica", "Backpack", "Key", "Glasses", "Shoe", "Mug", "Pen", "Watch", "Phone", "Umbrella",
+      "Notebook", "Bag", "Wallet", "Toothbrush", "Remote Control", "Spoon", "Chess", "Monopoly",
+      "Card Game", "Scrabble", "Ludo", "Tic Tac Toe", "Puzzle", "Memory", "Roller Coaster",
+      "Carousel", "Ferris Wheel", "Log Flume", "Haunted House", "Bumper Cars", "Drop Tower",
+      "Cotton Candy", "Can Toss", "Loop", "Fireworks", "Champagne", "Lead Pouring", "Midnight",
+      "Lucky Clover", "Sparkler", "Beach", "Hotel", "Suitcase", "Airport", "Sunscreen",
+      "Swimming Pool", "Postcard", "Sand", "Parasol", "Cocktail", "Swim Trunks", "Sunglasses", "Sea"
+    ];
+
+    let assignments = {};
+    let assignedTopic = "";
+
+    const nameContainer = document.getElementById("nameContainer");
+    const modal = document.getElementById("modal");
+    const topicText = document.getElementById("topicText");
+
+    function renderNames() {
+      nameContainer.innerHTML = "";
+      names.forEach(name => {
+        const card = document.createElement("div");
+        card.className = "name-card";
+        card.innerHTML = `
+          <h3>${name}</h3>
+          <button onclick="reveal('${name}')">Reveal</button>
+        `;
+        nameContainer.appendChild(card);
+      });
+    }
+
+    function assignTopic() {
+      const customInput = document.getElementById("customWordInput").value.trim();
+      assignedTopic = customInput || topics[Math.floor(Math.random() * topics.length)];
+
+      // Decide impostor
+      let impostor = "";
+      if (customInput) {
+        // If custom topic used, choose from first 3 players only
+        const nonFourth = names.slice(0, 3);
+        impostor = nonFourth[Math.floor(Math.random() * nonFourth.length)];
+      } else {
+        // Otherwise any player can be impostor
+        impostor = names[Math.floor(Math.random() * names.length)];
+      }
+
+      assignments = {};
+      names.forEach(name => {
+        assignments[name] = name === impostor ? "X" : assignedTopic;
+      });
+
+      alert("Topics assigned! Click Reveal to see yours.");
+    }
+
+    function reveal(name) {
+      if (!assignments[name]) {
+        alert("Please assign a topic first.");
+        return;
+      }
+      topicText.textContent = assignments[name] === "X"
+        ? "You got the secret assignment: X"
+        : `Your topic is: ${assignedTopic}`;
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+
+    renderNames();
+  </script>
+
+</body>
+</html>
