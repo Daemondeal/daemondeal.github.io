@@ -61,6 +61,11 @@ class Generator:
             self.path_outdir / "MultipleChoices",
         )
 
+        shutil.copytree(
+            self.path_data / "other" / "quick",
+            self.path_outdir / "quick",
+        )
+
         self.generate_content(
             self.path_outdir / "index.html",
             "Hoempage",
