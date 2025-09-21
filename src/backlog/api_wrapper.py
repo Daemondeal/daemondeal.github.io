@@ -102,6 +102,8 @@ class ApiWrapper:
             "Authorization": f"Bearer {self.token}",
         }
 
+        log.debug('Sending request "%s"', url)
+        log.debug("Query: %s", query)
         response = requests.post(url, headers=headers, data=query)
 
         if response.status_code != 200:
