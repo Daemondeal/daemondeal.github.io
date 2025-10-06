@@ -61,7 +61,7 @@ class Generator:
     def generate(self):
         self.path_outdir.mkdir()
 
-        self.copy(self.path_data, "static")
+        self.copy(self.path_data / "static", "static")
 
         path_other = self.path_data / "other"
         for dir in path_other.iterdir():
