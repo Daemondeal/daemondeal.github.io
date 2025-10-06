@@ -45,3 +45,5 @@ def main():
 
     generator.generate()
     generate_backlog(generator)
+
+    log.info("All Done!")

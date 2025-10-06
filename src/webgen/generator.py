@@ -52,20 +52,22 @@ class Generator:
         with open(path_out, "w") as out:
             out.write(template.render(title=title, content=md))
 
+    def copy(self, path_source: Path, dest: str | Path):
+        path_dest = self.path_outdir / dest
+
+        log.info(f"Generating {path_dest}")
+        shutil.copytree(path_source, path_dest)
+
     def generate(self):
         self.path_outdir.mkdir()
 
-        shutil.copytree(self.path_data / "static", self.path_outdir / "static")
-        shutil.copytree(
-            self.path_data / "other" / "MultipleChoices",
-            self.path_outdir / "MultipleChoices",
-        )
+        self.copy(self.path_data, "static")
 
-        shutil.copytree(
-            self.path_data / "other" / "quick",
-            self.path_outdir / "quick",
-        )
+        path_other = self.path_data / "other"
+        for dir in path_other.iterdir():
+            self.copy(dir, dir.name)
 
+        log.info(f"Generating {self.path_outdir / 'index.html'}")
         self.generate_content(
             self.path_outdir / "index.html",
             "Hoempage",

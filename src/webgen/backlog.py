@@ -34,6 +34,7 @@ def generate_backlog(generator: Generator):
         cache_cover(game, path_cover)
 
     path_backlog = generator.path_outdir / "backlog"
+    log.info(f"Generating {path_backlog}")
     path_backlog.mkdir()
 
     shutil.copytree(path_cover, generator.path_outdir / "backlog" / "covers")
