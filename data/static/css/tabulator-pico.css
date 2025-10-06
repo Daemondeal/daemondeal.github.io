@@ -1,0 +1,87 @@
+/* === Tabulator Pico Overrides === */
+
+/* Table container */
+.tabulator {
+  background: var(--pico-background-color) !important;
+  color: var(--pico-color) !important;
+  border: 1px solid var(--pico-muted-border-color) !important;
+  border-radius: 0.5rem !important;
+  font-size: 0.95rem !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
+  overflow: hidden !important;
+}
+
+/* Header row */
+.tabulator .tabulator-header {
+  background-color: var(--pico-mark-background) !important;
+  color: var(--pico-color) !important;
+  border-bottom: 1px solid var(--pico-muted-border-color) !important;
+  font-weight: 600 !important;
+}
+
+/* Header cells */
+.tabulator .tabulator-col {
+  padding: 0.6rem 0.75rem !important;
+  border-right: 1px solid var(--pico-muted-border-color) !important;
+  background: transparent !important;
+}
+.tabulator .tabulator-col:last-child {
+  border-right: none !important;
+}
+
+/* Sort arrows */
+.tabulator .tabulator-col .tabulator-arrow {
+  border-top-color: var(--pico-color) !important;
+}
+.tabulator .tabulator-col.tabulator-col-sorter-desc .tabulator-arrow {
+  border-bottom-color: var(--pico-color) !important;
+}
+
+/* Rows */
+.tabulator .tabulator-row {
+  border-bottom: 1px solid var(--pico-muted-border-color) !important;
+  background: transparent !important;
+  transition: background 0.15s ease-in-out !important;
+}
+.tabulator .tabulator-row:hover {
+  background-color: var(--pico-hover-background-color) !important;
+}
+
+/* Cells */
+.tabulator .tabulator-cell {
+  padding: 0.55rem 0.75rem !important;
+  background: transparent !important;
+}
+
+/* Selected row */
+.tabulator .tabulator-row.tabulator-selected {
+  background-color: var(--pico-primary-background) !important;
+  color: var(--pico-primary-inverse) !important;
+}
+
+/* Footer (pagination etc.) */
+.tabulator .tabulator-footer {
+  background-color: var(--pico-muted-color) !important;
+  border-top: 1px solid var(--pico-muted-border-color) !important;
+  padding: 0.5rem !important;
+  font-size: 0.9rem !important;
+}
+
+/* Pagination buttons */
+.tabulator .tabulator-footer .tabulator-page {
+  background: var(--pico-background-color) !important;
+  border: 1px solid var(--pico-muted-border-color) !important;
+  border-radius: 0.3rem !important;
+  padding: 0.25rem 0.6rem !important;
+  margin: 0 0.15rem !important;
+  font-size: 0.85rem !important;
+  cursor: pointer !important;
+}
+.tabulator .tabulator-footer .tabulator-page:hover {
+  background: var(--pico-hover-background-color) !important;
+}
+.tabulator .tabulator-footer .tabulator-page.active {
+  background: var(--pico-primary-background) !important;
+  color: var(--pico-primary-inverse) !important;
+  border-color: var(--pico-primary-background) !important;
+}

@@ -1,0 +1,89 @@
+{#
+    Title
+    Genre
+    Series
+    Status
+    Platform
+    Estimated Hours
+    Notes
+#}
+
+<header>
+    <button aria-label="Close" rel="prev" onclick="closeDialog()"></button>
+    <p>
+        <strong>{{ game.name }}</strong>
+    </p>
+</header>
+
+<div class="grid">
+    {% if game.cover %}
+    <img
+        src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{ game.cover.image_id }}.jpg"
+        alt="{{ game.name }} cover"
+        style="width: 100%; border-radius: 0.25rem;">
+    {% endif %}
+    <form
+        hx-post="/update-game"
+        hx-swap="none"
+        id="dialog-form"
+        data-id="{{ game.id }}">
+        <!-- hx-on:htmx:after-on-load="gameAdded('{{ game.id }}')" > -->
+
+        <input type="hidden" name="id" value="{{ game.id }}">
+        <input type="hidden" name="title" value="{{ game.name }}">
+
+        {% if game.cover %}
+        <input type="hidden" name="img_id" value="{{ game.cover.image_id }}">
+        {% else %}
+        <input type="hidden" name="img_id" value="">
+        {% endif %}
+
+        <select aria-label="Platform" required name="platform">
+            <option disabled value="">
+                Platform
+            </option>
+            {% for platform in platforms %}
+              <option
+                {% if platform == game_data.platform %}selected{% endif %}>
+                {{ platform }}
+              </option>
+            {% endfor %}
+        </select>
+
+        <select aria-label="Status" required name="status">
+            <option disabled value="">
+                Status
+            </option>
+            {% for status in statuses %}
+              <option {% if status == game_data.plaftorm %}selected{% endif %}>{{ status }}</option>
+            {% endfor %}
+        </select>
+
+    <input type="text" name="series" placeholder="Series" value="{{ game_data.series }}">
+
+        <div class="grid">
+        <input type="text" name="genre" placeholder="Genre" required value="{{ game_data.genre }}">
+            <input type="number" name="hours" placeholder="Estimated Hours" required value="{{ game_data.hours }}">
+        </div>
+
+        <input type="text" name="sort_name" placeholder="Sort Name" value="{{ game_data.sort_name }}">
+
+        <div class="star-rating" id="starRating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+        </div>
+
+        <input type="hidden" name="rating" id="ratingInput" value="{{ game_data.rating }}">
+
+        <textarea placeholder="Notes" name="notes" value="{{ game_data.notes }}"></textarea>
+
+        <button type="submit">Update</button>
+    </form>
+</div>
+
+<p style="margin-top: 1em;">
+    {{ game.summary }}
+</p>
+

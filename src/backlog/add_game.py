@@ -39,6 +39,12 @@ def sort_by_similarity(query, list):
     list.sort(key=lambda x: score(normalize(x["name"])), reverse=True)
 
 
+def find_game(game_file, id):
+    for i, entry in enumerate(game_file["games"]):
+        if entry["id"] == id:
+            return i, entry
+    return -1, None
+
 def main_add_game(args):
     app.run(debug=True)
 
@@ -55,13 +61,20 @@ def save_game_file(gf):
 
 @app.route("/")
 def route_home():
+    return render_template("backlog_home.html")
+
+@app.route("/add-game", methods=("GET", ))
+def route_add_game_get():
     return render_template("add_game.html")
 
+@app.route("/update-game", methods=("GET", ))
+def route_update_game_get():
+    game_file = load_game_file()
 
-@app.route("/add-game-dialog")
-def route_add_game_dialog():
-    id = request.args.get("game_id", "")
+    return render_template("update_game.html", games=game_file["games"])
 
+
+def get_game_info(id):
     query = f"""
     fields id, name, genres.*, platforms.*, cover.*, summary, remakes.platforms.abbreviation, remasters.platforms.*;
     where id={id};
@@ -71,7 +84,6 @@ def route_add_game_dialog():
     wrapper = ApiWrapper.login()
     game = wrapper.api_request("games", query)[0]
 
-    game_file = load_game_file()
 
     platforms = set()
 
@@ -95,11 +107,38 @@ def route_add_game_dialog():
         for remaster in game["remasters"]:
             add_platforms(remaster)
 
+    return game, platforms
+
+@app.route("/add-game-dialog")
+def route_add_game_dialog():
+    id = request.args.get("game_id", "")
+    game_file = load_game_file()
+    game, platforms = get_game_info(id)
+
+
     return render_template(
         "add_game_dialog.html",
         game=game,
         statuses=game_file["statuses"],
         platforms=list(platforms),
+    )
+
+@app.route("/update-game-dialog")
+def route_update_game_dialog():
+    id = request.args.get("game_id", "")
+    game_file = load_game_file()
+    game, platforms = get_game_info(id)
+
+
+    _, filled_game = find_game(game_file, id)
+    assert filled_game
+
+    return render_template(
+        "update_game_dialog.html",
+        game=game,
+        statuses=game_file["statuses"],
+        platforms=list(platforms),
+        game_data=filled_game,
     )
 
 
@@ -121,6 +160,32 @@ def route_add_game():
 
     game_file = load_game_file()
     game_file["games"].append(game_entry)
+    save_game_file(game_file)
+
+    return ""
+
+@app.route("/update-game", methods=("POST",))
+def route_update_game():
+    game_entry = {
+        "id": request.form["id"],
+        "img_id": request.form["img_id"],
+        "title": request.form["title"],
+        "genre": request.form["genre"],
+        "series": request.form["series"],
+        "rating": request.form["rating"],
+        "status": request.form["status"],
+        "platform": request.form["platform"],
+        "hours": request.form["hours"],
+        "sort_name": request.form["sort_name"],
+        "notes": request.form["notes"],
+    }
+
+    game_file = load_game_file()
+    idx, game = find_game(game_file, game_entry["id"])
+    assert game
+
+    game_file["games"][idx] = game_entry
+
     save_game_file(game_file)
 
     return ""

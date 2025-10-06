@@ -1,0 +1,137 @@
+{% extends "./base.html" %}
+
+{% block title %}
+Add Game
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<link href=" {{ url_for('static', filename='css/tabulator_simple.min.css') }}" rel="stylesheet">
+<link href=" {{ url_for('static', filename='css/tabulator-pico.css') }}" rel="stylesheet">
+<script type="text/javascript" src=" {{ url_for('static', filename='js/tabulator.min.js') }}"></script>
+{# ' #}
+
+{% endblock %}
+
+{% block container %}
+<h1>Update Game</h1>
+
+<dialog id="new-game-dialog">
+    <article id="dialog-content" class="container-fluid modal">
+    </article>
+</dialog>
+
+<div id="games-table">
+</div>
+
+
+<script>
+  const gamesData = {{ games | tojson }};
+
+  function titleSorter(a, b, aRow, bRow, column, dir, sorterParams){
+    let aVal = aRow.getData().sort_name || aRow.getData().title;
+    let bVal = bRow.getData().sort_name || bRow.getData().title;
+
+    if (aVal < bVal) return -1;
+    if (aVal > bVal) return 1;
+    return 0;
+  }
+
+  const table = new Tabulator("#games-table", {
+    data: gamesData,
+    columns: [
+      { title: "Title", field: "title", sorter: titleSorter, },
+      { title: "Status", field: "status", },
+      { title: "Play Time", field: "hours", sorter: "numeric" },
+      { title: "Genre", field: "genre",  },
+    ],
+    initialSort: [
+      { column: "title", dir: "asc" },
+    ],
+    layout: "fitDataStretch",
+  });
+
+  table.on("rowClick", (e, row) => {
+    const data = row.getData()
+    htmx.ajax('GET', '/update-game-dialog', {
+      target: '#dialog-content',
+      swap: 'innerHTML',
+      values: { game_id: data.id },
+    }).then(openDialog);
+
+  })
+
+
+  function openDialog() {
+    const dialog = document.getElementById('new-game-dialog');
+    setupStars();
+    setupForm();
+    if (!dialog.open) dialog.showModal();
+  }
+
+  function closeDialog() {
+    const dialog = document.getElementById('new-game-dialog');
+    if (dialog.open) {
+        dialog.close();
+    }
+  }
+
+  function setupForm() {
+    const form = document.getElementById("dialog-form");
+    const id = form.dataset.id;
+
+
+    form.addEventListener("htmx:afterOnLoad", (ev) => {
+      if (ev.detail.xhr.status == 200) {
+        Toastify({
+          text: "Game Updated!",
+          duration: 3000
+        }).showToast();
+        closeDialog();
+      } else {
+        Toastify({
+          text: "Error!",
+          duration: 3000
+        }).showToast();
+      }
+
+    });
+
+  }
+
+
+  function setupStars() {
+    const stars = document.querySelectorAll('.star');
+    const ratingInput = document.getElementById('ratingInput');
+    let currentRating = ratingInput.value;
+
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        currentRating = parseInt(star.getAttribute('data-value'));
+        updateStars(currentRating);
+        ratingInput.value = currentRating;
+      });
+
+      star.addEventListener('mouseenter', () => {
+        const hoverValue = parseInt(star.getAttribute('data-value'));
+        updateStars(hoverValue);
+      });
+
+      star.addEventListener('mouseleave', () => {
+        updateStars(currentRating);
+      });
+    });
+
+    function updateStars(rating) {
+      stars.forEach(star => {
+        const value = parseInt(star.getAttribute('data-value'));
+        star.classList.toggle('selected', value <= rating);
+      });
+    }
+
+    updateStars(currentRating);
+  }
+</script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+{% endblock %}
