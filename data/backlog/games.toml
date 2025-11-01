@@ -1844,7 +1844,7 @@ status = "Finished"
 platform = "PC"
 hours = "13"
 sort_name = "Ys 01"
-notes = ""
+notes = "Play Order - 1"
 
 [[games]]
 id = "10949"
@@ -1856,8 +1856,8 @@ rating = "3"
 status = "Finished"
 platform = "PC"
 hours = "23"
-sort_name = ""
-notes = ""
+sort_name = "Ys 00"
+notes = "Play Order - 2"
 
 [[games]]
 id = "25343"
@@ -2208,7 +2208,7 @@ status = "Backlog"
 platform = "PC"
 hours = "21"
 sort_name = "Ys 04"
-notes = ""
+notes = "Play Order - 3"
 
 [[games]]
 id = "35626"
@@ -2637,7 +2637,7 @@ status = "Backlog"
 platform = "PC"
 hours = "11"
 sort_name = "Ys 03"
-notes = "Play Order - 5"
+notes = "Play Order - 4"
 
 [[games]]
 id = "15454"
@@ -2923,7 +2923,7 @@ status = "Wishlist"
 platform = "PC"
 hours = "24"
 sort_name = "Ys 10"
-notes = ""
+notes = "Play Order - 9"
 
 [[games]]
 id = "10948"
@@ -2936,7 +2936,7 @@ status = "Wishlist"
 platform = "PC"
 hours = "22"
 sort_name = "Ys 07"
-notes = ""
+notes = "Play Order - 7"
 
 [[games]]
 id = "27304"
@@ -2949,7 +2949,7 @@ status = "Wishlist"
 platform = "PC"
 hours = "37"
 sort_name = "Ys 08"
-notes = ""
+notes = "Play Order - 5"
 
 [[games]]
 id = "113431"
@@ -2962,7 +2962,7 @@ status = "Wishlist"
 platform = "PC"
 hours = "27"
 sort_name = "Ys 09"
-notes = ""
+notes = "Play Order - 8"
 
 [[games]]
 id = "18018"
