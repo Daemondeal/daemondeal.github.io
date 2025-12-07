@@ -3081,3 +3081,16 @@ hours = "40"
 sort_name = ""
 notes = ""
 
+[[games]]
+id = "144022"
+img_id = "co4h5s"
+title = "Sifu"
+genre = "Action"
+series = ""
+rating = "0"
+status = "Backlog"
+platform = "Switch"
+hours = "14"
+sort_name = ""
+notes = ""
+
