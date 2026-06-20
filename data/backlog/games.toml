@@ -3172,3 +3172,16 @@ hours = "30"
 sort_name = ""
 notes = ""
 
+[[games]]
+id = "275392"
+img_id = "co89dp"
+title = "No Case Should Remain Unsolved"
+genre = "VN"
+series = ""
+rating = "3"
+status = "Finished"
+platform = "PC"
+hours = "2"
+sort_name = ""
+notes = ""
+
